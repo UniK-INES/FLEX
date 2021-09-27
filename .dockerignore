@@ -1,0 +1,10 @@
+.classpath
+.gitignore
+.project
+.lgpl-3.0.txt
+*.launch
+.settings/
+bin/
+target/
+tools/
+logs/

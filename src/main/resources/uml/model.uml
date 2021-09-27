@@ -1,0 +1,2075 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:PapyrusJava="http://www.eclipse.org/papyrus/PapyrusJava/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_lMAFMG4KEeef7_yimw9KWg" name="RootElement">
+    <packagedElement xmi:type="uml:Class" xmi:id="_zeIHAG4KEeef7_yimw9KWg" name="EnergyRequest"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1fdFkG4KEeef7_yimw9KWg" name="UserAccount"/>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_XaZL4MkiEeeRjsFAnnla0A" name="ClearingScheduling">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_oM11YMkiEeeRjsFAnnla0A" name="" type="_zeIHAG4KEeef7_yimw9KWg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vs1o0MkyEee485SK6jFBfQ" name="" type="_gggokMkyEee485SK6jFBfQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yOIg4MkyEee485SK6jFBfQ" name="" type="_gg8GYMkyEee485SK6jFBfQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_0QcW4MkyEee485SK6jFBfQ" name="" type="_hNXHgMkyEee485SK6jFBfQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_hKIicMk0Eee485SK6jFBfQ" name="" type="_g0AMUMkyEee485SK6jFBfQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_vszzoMkyEee485SK6jFBfQ" name="" represents="_vs1o0MkyEee485SK6jFBfQ" coveredBy="_fhJn4MkzEee485SK6jFBfQ _7UfBYMkyEee485SK6jFBfQ _7UOisMkyEee485SK6jFBfQ _BVLYgMkzEee485SK6jFBfQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_yOHSwMkyEee485SK6jFBfQ" name="" represents="_yOIg4MkyEee485SK6jFBfQ" coveredBy="_fhKO8MkzEee485SK6jFBfQ _OZF6wMkzEee485SK6jFBfQ _OZEsoMkzEee485SK6jFBfQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_0Qbv0MkyEee485SK6jFBfQ" name="" represents="_0QcW4MkyEee485SK6jFBfQ" coveredBy="_BXUGgMkzEee485SK6jFBfQ _BXS4YMkzEee485SK6jFBfQ _BVL_kMkzEee485SK6jFBfQ _BXUtkMkzEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_fhJn4MkzEee485SK6jFBfQ" name="Message1SendEvent" covered="_vszzoMkyEee485SK6jFBfQ" message="_fhIZwMkzEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_fhKO8MkzEee485SK6jFBfQ" name="Message1ReceiveEvent" covered="_yOHSwMkyEee485SK6jFBfQ" message="_fhIZwMkzEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_7UfBYMkyEee485SK6jFBfQ" name="ActionExecutionSpecification1Start" covered="_vszzoMkyEee485SK6jFBfQ" execution="_7UOisMkyEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_BXUGgMkzEee485SK6jFBfQ" name="BehaviorExecutionSpecification1Start" covered="_0Qbv0MkyEee485SK6jFBfQ" execution="_BXS4YMkzEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_BVL_kMkzEee485SK6jFBfQ" name="Message1ReceiveEvent" covered="_0Qbv0MkyEee485SK6jFBfQ" message="_BVDcsMkzEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_BVLYgMkzEee485SK6jFBfQ" name="Message1SendEvent" covered="_vszzoMkyEee485SK6jFBfQ" message="_BVDcsMkzEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_BXUtkMkzEee485SK6jFBfQ" name="BehaviorExecutionSpecification1Finish" covered="_0Qbv0MkyEee485SK6jFBfQ" execution="_BXS4YMkzEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_OZF6wMkzEee485SK6jFBfQ" name="BehaviorExecutionSpecification2Finish" covered="_yOHSwMkyEee485SK6jFBfQ" execution="_OZEsoMkzEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_7UOisMkyEee485SK6jFBfQ" name="ActionExecutionSpecification1" covered="_vszzoMkyEee485SK6jFBfQ" finish="_fhJn4MkzEee485SK6jFBfQ" start="_7UfBYMkyEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_BXS4YMkzEee485SK6jFBfQ" name="BehaviorExecutionSpecification1" covered="_0Qbv0MkyEee485SK6jFBfQ" finish="_BXUtkMkzEee485SK6jFBfQ" start="_BXUGgMkzEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_OZEsoMkzEee485SK6jFBfQ" name="BehaviorExecutionSpecification2" covered="_yOHSwMkyEee485SK6jFBfQ" finish="_OZF6wMkzEee485SK6jFBfQ" start="_fhKO8MkzEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:InteractionUse" xmi:id="_RSqScMk_Eee485SK6jFBfQ" name="InteractionUse1"/>
+      <message xmi:type="uml:Message" xmi:id="_BVDcsMkzEee485SK6jFBfQ" name="findAll()" receiveEvent="_BVL_kMkzEee485SK6jFBfQ" sendEvent="_BVLYgMkzEee485SK6jFBfQ"/>
+      <message xmi:type="uml:Message" xmi:id="_fhIZwMkzEee485SK6jFBfQ" name="schedule(product)" messageSort="asynchCall" receiveEvent="_fhKO8MkzEee485SK6jFBfQ" sendEvent="_fhJn4MkzEee485SK6jFBfQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_gM03kMkyEee485SK6jFBfQ" name="market-backend">
+      <packagedElement xmi:type="uml:Package" xmi:id="_gXBVYMkyEee485SK6jFBfQ" name="de">
+        <packagedElement xmi:type="uml:Package" xmi:id="_gXB8cMkyEee485SK6jFBfQ" name="unik">
+          <packagedElement xmi:type="uml:Package" xmi:id="_gXDKkMkyEee485SK6jFBfQ" name="ines">
+            <packagedElement xmi:type="uml:Package" xmi:id="_gXDKkckyEee485SK6jFBfQ" name="enavi">
+              <packagedElement xmi:type="uml:Package" xmi:id="_gXDxoMkyEee485SK6jFBfQ" name="enavimarket">
+                <packagedElement xmi:type="uml:Class" xmi:id="_gXLtcMkyEee485SK6jFBfQ" name="EnaviMarketApplication" visibility="public">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_gfQrYMkyEee485SK6jFBfQ" name="log" visibility="private" isStatic="true" isUnique="false">
+                    <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_gfTHoMkyEee485SK6jFBfQ" name="defaultValue">
+                      <language>JAVA</language>
+                      <body>LogFactory.getLog(EnaviMarketApplication.class)</body>
+                    </defaultValue>
+                  </ownedAttribute>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gf5kkMkyEee485SK6jFBfQ" name="main" specification="_gfn3wMkyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    ConfigurableApplicationContext context = SpringApplication.run(EnaviMarketApplication.class, args);
+    log.info(&quot;Context &quot; + context.getId() + &quot; started at &quot; + context.getStartupDate());
+</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_gfn3wMkyEee485SK6jFBfQ" name="main" visibility="public" isStatic="true" method="_gf5kkMkyEee485SK6jFBfQ">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_gftXUMkyEee485SK6jFBfQ" name="args">
+                      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gfvMgMkyEee485SK6jFBfQ"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gfvzkMkyEee485SK6jFBfQ" value="*"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_gggokMkyEee485SK6jFBfQ" name="EnaviMarketController" visibility="public">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_ggidwMkyEee485SK6jFBfQ" name="log" visibility="private" isUnique="false">
+                    <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_ggjr4MkyEee485SK6jFBfQ" name="defaultValue">
+                      <language>JAVA</language>
+                      <body>LogFactory.getLog(EnaviMarketController.class)</body>
+                    </defaultValue>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_ggpLcMkyEee485SK6jFBfQ" name="clearing" visibility="private" type="_gvanQMkyEee485SK6jFBfQ" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_ggtc4MkyEee485SK6jFBfQ" name="userRepos" visibility="private" type="_g-SJsMkyEee485SK6jFBfQ" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_ggwgMMkyEee485SK6jFBfQ" name="requestRepos" visibility="private" type="_hRhOwMkyEee485SK6jFBfQ" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_gg0xoMkyEee485SK6jFBfQ" name="clearingPriceRepos" visibility="private" type="_hIw7YMkyEee485SK6jFBfQ" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_gg308MkyEee485SK6jFBfQ" name="mmProductRepos" visibility="private" type="_hNXHgMkyEee485SK6jFBfQ" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_gg64QMkyEee485SK6jFBfQ" name="mProductRepos" visibility="private" type="_hDRXYMkyEee485SK6jFBfQ" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_gg8tcMkyEee485SK6jFBfQ" name="mpClearer" visibility="private" type="_gg8GYMkyEee485SK6jFBfQ" isUnique="false"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gg-ioMkyEee485SK6jFBfQ" name="startMarket" specification="_gg9UgMkyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    for (MMarketProductPattern mmProduct : mmProductRepos.findAll()) {
+        mpClearer.schedule(mmProduct);
+    }
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ghTSwMkyEee485SK6jFBfQ" name="getTimeInformation" specification="_gg_wwMkyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    log.info(&quot;Send time information...&quot;);
+    TimeInformation tinfo = new TimeInformation();
+    tinfo.currentSystemTime = System.currentTimeMillis();
+    tinfo.currentSimulationTime = System.currentTimeMillis();
+    tinfo.timeZone = Calendar.getInstance().getTimeZone().getDisplayName();
+    tinfo.simulationFactor = 1.0f;
+    return tinfo;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ghYLQMkyEee485SK6jFBfQ" name="getProductInformation" specification="_ghUg4MkyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    MarketProductList list = new MarketProductList();
+    list.tradedProducts = this.mProductRepos.findAll();
+    return list;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ghdq0MkyEee485SK6jFBfQ" name="requestsJsonAll" specification="_ghaAcMkyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    return requestRepos.listAll();
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_giC5oMkyEee485SK6jFBfQ" name="requestsJsonById" specification="_gh-oMMkyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    MarketEnergyRequest result = requestRepos.findOne(id);
+    return result;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gij3AMkyEee485SK6jFBfQ" name="receiveRequest" specification="_giN4wMkyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+    UserAccount userAccount = userRepos.findByName(authentication.getName());
+    if (userAccount == null) {
+        throw new IllegalStateException(&quot;User could not be authenticated!&quot;);
+    }
+    if (!EnergyRequestValidator.validate(request)) {
+        request = EnergyRequestValidator.setInvalid(request);
+        return request;
+    } else {
+        request = EnergyRequestValidator.setUnhandeled(request);
+        // check whether request with user and its custom ID already exists:
+        MarketEnergyRequest mrequest = requestRepos.findByCustomId(userAccount.getId(), request.id);
+        if (mrequest != null) {
+            log.debug(&quot;Submitted request already present at server with ID &quot; + mrequest.getId() + &quot;. Updating...&quot;);
+            // Otherwise, EnergyRequestValidator should have detected the issue:
+            assert mrequest.getStatus() == EnergyRequest.Status.UNHANDLED;
+            mrequest.setRequest(request);
+        } else {
+            mrequest = new MarketEnergyRequest(userAccount, request);
+        }
+        log.debug(&quot;Store energy request &quot; + request + &quot;...&quot;);
+        requestRepos.save(mrequest);
+        return request;
+    }
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_giuPEMkyEee485SK6jFBfQ" name="requestsJsonByCustomId" specification="_gimTQMkyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+    UserAccount userAccount = userRepos.findByName(authentication.getName());
+    MarketEnergyRequest result = requestRepos.findByCustomId(userAccount.getId(), id);
+    return result.getRequest();
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gi6cUMkyEee485SK6jFBfQ" name="priceJsonAll" specification="_giwrUMkyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    return clearingPriceRepos.findAll();
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gjVTEMkyEee485SK6jFBfQ" name="priceJsonFromTo" specification="_gjBxEMkyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    return clearingPriceRepos.findClearingInfoAfterBefore(after, before);
+</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_gg9UgMkyEee485SK6jFBfQ" name="startMarket" visibility="public" method="_gg-ioMkyEee485SK6jFBfQ"/>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_gg_wwMkyEee485SK6jFBfQ" name="getTimeInformation" visibility="public" method="_ghTSwMkyEee485SK6jFBfQ">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ghSrsMkyEee485SK6jFBfQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ghUg4MkyEee485SK6jFBfQ" name="getProductInformation" visibility="public" method="_ghYLQMkyEee485SK6jFBfQ">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ghW9IMkyEee485SK6jFBfQ" type="_ghWWEMkyEee485SK6jFBfQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_ghaAcMkyEee485SK6jFBfQ" name="requestsJsonAll" visibility="public" method="_ghdq0MkyEee485SK6jFBfQ">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ghccsMkyEee485SK6jFBfQ" type="_ghb1oMkyEee485SK6jFBfQ" direction="return">
+                      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ghdDwMkyEee485SK6jFBfQ"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ghdDwckyEee485SK6jFBfQ" value="*"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_gh-oMMkyEee485SK6jFBfQ" name="requestsJsonById" visibility="public" method="_giC5oMkyEee485SK6jFBfQ">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_gh_2UMkyEee485SK6jFBfQ" type="_ghb1oMkyEee485SK6jFBfQ" direction="return"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_giBrgMkyEee485SK6jFBfQ" name="id">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_giN4wMkyEee485SK6jFBfQ" name="receiveRequest" visibility="public" method="_gij3AMkyEee485SK6jFBfQ">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_giPG4MkyEee485SK6jFBfQ" direction="return"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_giSKMMkyEee485SK6jFBfQ" name="request"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_gimTQMkyEee485SK6jFBfQ" name="requestsJsonByCustomId" visibility="public" method="_giuPEMkyEee485SK6jFBfQ">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_ginhYMkyEee485SK6jFBfQ" direction="return"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_giry0MkyEee485SK6jFBfQ" name="id"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_giwrUMkyEee485SK6jFBfQ" name="priceJsonAll" visibility="public" method="_gi6cUMkyEee485SK6jFBfQ">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_giyggMkyEee485SK6jFBfQ" type="_gix5cMkyEee485SK6jFBfQ" direction="return">
+                      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gi08wMkyEee485SK6jFBfQ"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gi4AEMkyEee485SK6jFBfQ" value="*"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_gjBxEMkyEee485SK6jFBfQ" name="priceJsonFromTo" visibility="public" method="_gjVTEMkyEee485SK6jFBfQ">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_gjDmQMkyEee485SK6jFBfQ" type="_gix5cMkyEee485SK6jFBfQ" direction="return">
+                      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gjE0YMkyEee485SK6jFBfQ"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gjFbcMkyEee485SK6jFBfQ" value="*"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_gjGpkMkyEee485SK6jFBfQ" name="after">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_gjIewMkyEee485SK6jFBfQ" name="before">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_gglhEMkyEee485SK6jFBfQ" name="clearing">
+                  <packagedElement xmi:type="uml:Interface" xmi:id="_gvanQMkyEee485SK6jFBfQ" name="ClearingMethod" visibility="public">
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_gve4sMkyEee485SK6jFBfQ" name="clearMarket" visibility="public">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gvijEMkyEee485SK6jFBfQ" name="requests" type="_ghb1oMkyEee485SK6jFBfQ">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gvmNcMkyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gvopsMkyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gvpQwMkyEee485SK6jFBfQ" name="cInfo" type="_gix5cMkyEee485SK6jFBfQ"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_gg8GYMkyEee485SK6jFBfQ" name="MarketProductClearer" visibility="public">
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_gz3pcMkyEee485SK6jFBfQ" name="log" visibility="private" isUnique="false">
+                      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_gz4QgMkyEee485SK6jFBfQ" name="defaultValue">
+                        <language>JAVA</language>
+                        <body>LogFactory.getLog(MarketProductClearer.class)</body>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_gz43kMkyEee485SK6jFBfQ" name="zone" visibility="public" isStatic="true" isUnique="false">
+                      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_gz5eoMkyEee485SK6jFBfQ" name="defaultValue">
+                        <language>JAVA</language>
+                        <body>&quot;CET&quot;</body>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_gz6FsMkyEee485SK6jFBfQ" name="clearingProvider" visibility="private" type="_gvs7IMkyEee485SK6jFBfQ" isUnique="false"/>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_gz6FsckyEee485SK6jFBfQ" name="requestRepository" visibility="private" type="_hRhOwMkyEee485SK6jFBfQ" isUnique="false"/>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_gz-XIMkyEee485SK6jFBfQ" name="taskScheduler" visibility="private" isUnique="false"/>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g0AMUMkyEee485SK6jFBfQ" name="schedule" specification="_gz_lQMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    // schedule clearing scheduler
+    getClearingsScheduleTask(mmProductPattern, mmProductPattern.getProductPattern().firstDeliveryPeriodStart).run();
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g0IvMMkyEee485SK6jFBfQ" name="getClearingsScheduleTask" specification="_g0AMUckyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return new Runnable() {
+
+        @Override
+        public void run() {
+            if (mmProductPattern.isActive()) {
+                MarketProductPattern productPattern = mmProductPattern.getProductPattern();
+                for (long cStart = Utils.getMarketClosingTimeForBidStartTime(deliveryPeriodStart, productPattern.openingTime, ZoneId.of(zone)); cStart &lt;= Utils.getMarketClosingTimeForBidStartTime(deliveryPeriodStart, productPattern.closingTime, ZoneId.of(zone)); cStart = cStart + Utils.getDurationFromDurationString(productPattern.auctionInterval).toMillis()) {
+                    log.trace(&quot;Schedule product &quot; + mmProductPattern + &quot; for &quot; + new Date(cStart) + &quot;...&quot;);
+                    taskScheduler.schedule(getClearingTask(mmProductPattern, deliveryPeriodStart, cStart), new Date(cStart));
+                }
+                taskScheduler.schedule(getClearingsScheduleTask(mmProductPattern, deliveryPeriodStart + productPattern.deliveryPeriodDuration), new Date(Utils.getMarketClosingTimeForBidStartTime(deliveryPeriodStart, productPattern.openingTime, ZoneId.of(zone))));
+            }
+        }
+    };
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g0LygMkyEee485SK6jFBfQ" name="getClearingTask" specification="_g0JWQMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return new Runnable() {
+
+        @Override
+        public void run() {
+            clearProduct(mmProductPattern, deliveryPeriodStart, clearingTime);
+        }
+    };
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g0R5IMkyEee485SK6jFBfQ" name="clearProduct" specification="_g0NAoMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    MarketProductPattern productPattern = mmProductPattern.getProductPattern();
+    // retrieve requests:
+    List&lt;MarketEnergyRequest> requests = this.requestRepository.findAllByIntervalAndSubmissionTime(deliveryPeriodStart, deliveryPeriodStart + productPattern.deliveryPeriodDuration, Utils.getMarketClosingTimeForBidStartTime(clearingTime, productPattern.auctionInterval, ZoneId.of(zone)), clearingTime);
+    List&lt;MarketEnergyRequest> filteredRequests = new ArrayList&lt;>();
+    for (MarketEnergyRequest request : requests) {
+        if (request.getStatus().equals(EnergyRequest.Status.UNHANDLED)) {
+            filteredRequests.add(request);
+        }
+    }
+    this.clearingProvider.getClearing(mmProductPattern.getClearingId()).clearMarket(filteredRequests, new ClearingInfo(productPattern, deliveryPeriodStart, clearingTime));
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g0UVYMkyEee485SK6jFBfQ" name="setClearingProvider" specification="_g0THQMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.clearingProvider = clearingProvider;
+</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_gz_lQMkyEee485SK6jFBfQ" name="schedule" visibility="public" method="_g0AMUMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gz_lQckyEee485SK6jFBfQ" name="mmProductPattern" type="_gz--MMkyEee485SK6jFBfQ"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g0AMUckyEee485SK6jFBfQ" name="getClearingsScheduleTask" visibility="protected" method="_g0IvMMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g0G6AMkyEee485SK6jFBfQ" direction="return"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g0HhEMkyEee485SK6jFBfQ" name="mmProductPattern" type="_gz--MMkyEee485SK6jFBfQ"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g0HhEckyEee485SK6jFBfQ" name="deliveryPeriodStart">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g0JWQMkyEee485SK6jFBfQ" name="getClearingTask" visibility="public" method="_g0LygMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g0J9UMkyEee485SK6jFBfQ" direction="return"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g0KkYMkyEee485SK6jFBfQ" name="mmProductPattern" type="_gz--MMkyEee485SK6jFBfQ"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g0KkYckyEee485SK6jFBfQ" name="deliveryPeriodStart">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g0LLcMkyEee485SK6jFBfQ" name="clearingTime">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g0NAoMkyEee485SK6jFBfQ" name="clearProduct" visibility="public" method="_g0R5IMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g0O10MkyEee485SK6jFBfQ" name="mmProductPattern" type="_gz--MMkyEee485SK6jFBfQ"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g0QD8MkyEee485SK6jFBfQ" name="deliveryPeriodStart">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g0QrAMkyEee485SK6jFBfQ" name="clearingTime">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g0THQMkyEee485SK6jFBfQ" name="setClearingProvider" visibility="public" method="_g0UVYMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g0TuUMkyEee485SK6jFBfQ" name="clearingProvider" type="_gvs7IMkyEee485SK6jFBfQ"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_gvsUEMkyEee485SK6jFBfQ" name="SimpleClearingProvider" visibility="public">
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_gwAdIMkyEee485SK6jFBfQ" name="clearingMethods" visibility="protected" isUnique="false">
+                      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_gwBrQMkyEee485SK6jFBfQ" name="defaultValue">
+                        <language>JAVA</language>
+                        <body>new HashMap&lt;>()</body>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_gwDgcMkyEee485SK6jFBfQ" name="uniformPriceClearing" visibility="private" type="_gwC5YMkyEee485SK6jFBfQ" isUnique="false"/>
+                    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_gv2sIMkyEee485SK6jFBfQ" name="SimpleClearingProvider implements ClearingProvider" client="_gvsUEMkyEee485SK6jFBfQ" supplier="_gvs7IMkyEee485SK6jFBfQ" contract="_gvs7IMkyEee485SK6jFBfQ"/>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gwKOIMkyEee485SK6jFBfQ" name="getClearing" specification="_gwFVoMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_JMIogMlFEee485SK6jFBfQ" type="_gvanQMkyEee485SK6jFBfQ" direction="return">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JMJ2oMlFEee485SK6jFBfQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JMKdsMlFEee485SK6jFBfQ" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_JMKdsclFEee485SK6jFBfQ" name="id">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JMLEwMlFEee485SK6jFBfQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JMLEwclFEee485SK6jFBfQ" value="1"/>
+                      </ownedParameter>
+                      <language>JAVA</language>
+                      <body>
+    if (!this.clearingMethods.containsKey(id)) {
+        this.clearingMethods.put(id, getNewClearingMethod(id));
+    }
+    return this.clearingMethods.get(id);
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gwSxAMkyEee485SK6jFBfQ" name="getNewClearingMethod" specification="_gwMqYMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_JMLr0MlFEee485SK6jFBfQ" type="_gvanQMkyEee485SK6jFBfQ" direction="return">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JMMS4MlFEee485SK6jFBfQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JMM58MlFEee485SK6jFBfQ" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_JMM58clFEee485SK6jFBfQ" name="id">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JMNhAMlFEee485SK6jFBfQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JMNhAclFEee485SK6jFBfQ" value="1"/>
+                      </ownedParameter>
+                      <language>JAVA</language>
+                      <body>
+    switch(id) {
+        case ClearingProvider.UNIFORM:
+            return uniformPriceClearing;
+        default:
+            return uniformPriceClearing;
+    }
+</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_gwFVoMkyEee485SK6jFBfQ" name="getClearing" visibility="public" method="_gwKOIMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gwF8sMkyEee485SK6jFBfQ" type="_gvanQMkyEee485SK6jFBfQ" direction="return"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gwJAAMkyEee485SK6jFBfQ" name="id"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_gwMqYMkyEee485SK6jFBfQ" name="getNewClearingMethod" visibility="protected" method="_gwSxAMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gwNRcMkyEee485SK6jFBfQ" type="_gvanQMkyEee485SK6jFBfQ" direction="return"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gwQ70MkyEee485SK6jFBfQ" name="id"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_gwnhIMkyEee485SK6jFBfQ" name="getClearing"/>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_gxiuMMkyEee485SK6jFBfQ" name="getClearing">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gxsfMMkyEee485SK6jFBfQ">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gxttUMkyEee485SK6jFBfQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gxuUYMkyEee485SK6jFBfQ" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_gyfwcMkyEee485SK6jFBfQ" name="getClearing">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gygXgMkyEee485SK6jFBfQ" type="_gvanQMkyEee485SK6jFBfQ" direction="return">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gyhloMkyEee485SK6jFBfQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gyiMsMkyEee485SK6jFBfQ" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_gy2VwMkyEee485SK6jFBfQ" name="getClearing">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gy280MkyEee485SK6jFBfQ" type="_gvanQMkyEee485SK6jFBfQ" direction="return">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gy4K8MkyEee485SK6jFBfQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gy4K8ckyEee485SK6jFBfQ" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gy4K8skyEee485SK6jFBfQ">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gy4yAMkyEee485SK6jFBfQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gy4yAckyEee485SK6jFBfQ" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_gzE_QckyEee485SK6jFBfQ" name="getClearing">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gzGNYMkyEee485SK6jFBfQ" type="_gvanQMkyEee485SK6jFBfQ" direction="return">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gzHbgMkyEee485SK6jFBfQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gzHbgckyEee485SK6jFBfQ" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gzJQsMkyEee485SK6jFBfQ" name="id">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gzLs8MkyEee485SK6jFBfQ" value="1"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gzMUAMkyEee485SK6jFBfQ" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Interface" xmi:id="_gvs7IMkyEee485SK6jFBfQ" name="ClearingProvider" visibility="public">
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_gwV0UMkyEee485SK6jFBfQ" name="UNIFORM" visibility="public" isLeaf="true" isStatic="true" isUnique="false">
+                      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_gwXpgMkyEee485SK6jFBfQ" name="defaultValue">
+                        <language>JAVA</language>
+                        <body>&quot;UNIFORM&quot;</body>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_gwY3oMkyEee485SK6jFBfQ" name="getClearing" visibility="public">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gxdOoMkyEee485SK6jFBfQ" type="_gvanQMkyEee485SK6jFBfQ" direction="return"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gy1usMkyEee485SK6jFBfQ" name="id"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_gwC5YMkyEee485SK6jFBfQ" name="UniformPriceClearing" visibility="public">
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g0sI0MkyEee485SK6jFBfQ" name="log" visibility="private" isUnique="false">
+                      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_g0ulEMkyEee485SK6jFBfQ" name="defaultValue">
+                        <language>JAVA</language>
+                        <body>LogFactory.getLog(UniformPriceClearing.class)</body>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g0waQMkyEee485SK6jFBfQ" name="requestRepository" visibility="private" type="_hRhOwMkyEee485SK6jFBfQ" isUnique="false"/>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g0xoYMkyEee485SK6jFBfQ" name="clearingPriceReposistory" visibility="private" type="_hIw7YMkyEee485SK6jFBfQ" isUnique="false"/>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g00EoMkyEee485SK6jFBfQ" name="taskScheduler" visibility="private" isUnique="false"/>
+                    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_g0pskMkyEee485SK6jFBfQ" name="UniformPriceClearing implements ClearingMethod" client="_gwC5YMkyEee485SK6jFBfQ" supplier="_gvanQMkyEee485SK6jFBfQ" contract="_gvanQMkyEee485SK6jFBfQ"/>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g08AcMkyEee485SK6jFBfQ" name="clearMarket" specification="_g02g4MkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    log.info(&quot;Clear &quot; + cInfo);
+    if (requests.size() > 0) {
+        doClearing(requests, cInfo);
+    } else {
+        cInfo.setEnergyCleared(0);
+        cInfo.setPriceCleared(Float.NaN);
+    }
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g0_DwMkyEee485SK6jFBfQ" name="doClearing" specification="_g09OkMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    PriceEnergyFunctionInitialiser funInitialiser = new PriceEnergyFunctionInitialiser(requests);
+    DemandEnergyFunction demandFunc = funInitialiser.getDemandPriceEnergyFunction();
+    SupplyPriceEnergyFunction supplyFunc = funInitialiser.getOfferPriceEnergyFunction();
+    // identify clearing price
+    ClearingInfo clearingInfo = findIntersection(supplyFunc, demandFunc, cInfo);
+    // float clearingEnergy =
+    log.info(&quot;Clearing price is: &quot; + clearingInfo.getPriceCleared());
+    this.clearingPriceReposistory.save(clearingInfo);
+    // write status
+    for (MarketEnergyRequest request : funInitialiser.getAsks()) {
+        if (request.getRequest().priceRequested > clearingInfo.getPriceCleared()) {
+            request.setStatus(EnergyRequest.Status.ACCEPTED);
+        } else {
+            request.setStatus(EnergyRequest.Status.DECLINED);
+        }
+        requestRepository.save(request);
+    }
+    for (MarketEnergyRequest request : funInitialiser.getOffers()) {
+        if (request.getRequest().priceRequested &lt;= clearingInfo.getPriceCleared()) {
+            request.setStatus(EnergyRequest.Status.ACCEPTED);
+        } else {
+            request.setStatus(EnergyRequest.Status.DECLINED);
+        }
+        requestRepository.save(request);
+    }
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g1GYgMkyEee485SK6jFBfQ" name="findIntersectionOld" specification="_g1AR4MkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    int sindex = 0;
+    int dindex = 0;
+    if (supplyFunction.getEnergyByIndex(0) > demandFunction.getEnergyByIndex(0)) {
+        log.info(&quot;All offers are above bids - no intersection!&quot;);
+        cInfo.setPriceCleared(Float.NaN);
+        cInfo.setEnergyCleared(0.0f);
+        return cInfo;
+    }
+    if (supplyFunction.getEnergyByIndex(supplyFunction.maxPriceIndex()) &lt; demandFunction.getEnergyByIndex(demandFunction.maxPriceIndex())) {
+        log.info(&quot;All offers are below bids - assign highest offer price&quot;);
+        cInfo.setPriceCleared(supplyFunction.getPriceByIndex(supplyFunction.maxPriceIndex()));
+        // assign overall energy supply:
+        cInfo.setEnergyCleared(supplyFunction.getEnergyByIndex(supplyFunction.maxPriceIndex()));
+        return cInfo;
+    }
+    // Increase indices in turns until offered energy is above or equal to demanded energy for consecutive prices:
+    while (supplyFunction.getEnergyByIndex(sindex) &lt; demandFunction.getEnergyByIndex(dindex)) {
+        // 
+        while (demandFunction.getPriceByIndex(dindex) &lt;= supplyFunction.getPriceByIndex(sindex) &amp;&amp; supplyFunction.getEnergyByIndex(sindex) &lt; demandFunction.getEnergyByIndex(dindex)) {
+            dindex++;
+        }
+        while (demandFunction.getPriceByIndex(dindex) >= supplyFunction.getPriceByIndex(sindex) &amp;&amp; supplyFunction.getEnergyByIndex(sindex) &lt; demandFunction.getEnergyByIndex(dindex)) {
+            sindex++;
+        }
+    }
+    log.debug(&quot;Indices of clearing price: Supply> &quot; + sindex + &quot; / Demand> &quot; + dindex);
+    // identify intersection price:
+    if (demandFunction.getPriceByIndex(dindex) > supplyFunction.getPriceByIndex(sindex)) {
+        log.debug(&quot;Indexed bid price is above indexed offer price&quot;);
+        if (demandFunction.getEnergyByIndex(dindex - 1) &lt; supplyFunction.getEnergyByIndex(sindex)) {
+            log.debug(&quot;Demand horizontally cut.&quot;);
+            cInfo.setPriceCleared(supplyFunction.getPriceByIndex(sindex));
+            cInfo.setEnergyCleared(demandFunction.getEnergyByIndex(dindex));
+            return cInfo;
+        } else {
+            log.debug(&quot;Demand vertically cut.&quot;);
+            cInfo.setPriceCleared(demandFunction.getPriceByIndex(dindex - 1));
+            cInfo.setEnergyCleared(supplyFunction.getEnergyByIndex(sindex));
+            return cInfo;
+        }
+    } else {
+        log.debug(&quot;Indexed bid price is below/equal to indexed offer price&quot;);
+        if (sindex &lt; supplyFunction.maxPriceIndex() &amp;&amp; demandFunction.getEnergyByIndex(dindex - 1) &lt; supplyFunction.getEnergyByIndex(sindex - 1)) {
+            log.debug(&quot;Demand horizontally cut.&quot;);
+            cInfo.setPriceCleared(supplyFunction.getPriceByIndex(sindex));
+            cInfo.setEnergyCleared(demandFunction.getEnergyByIndex(dindex + 1));
+            // cInfo.setEnergyCleared(demandFunction.getEnergyByIndex(dindex - 1));
+            return cInfo;
+        } else {
+            log.debug(&quot;Demand vertically cut.&quot;);
+            if (supplyFunction.getEnergyByIndex(sindex) &lt; demandFunction.getEnergyByIndex(dindex - 1)) {
+                log.debug(&quot;Demand index is advanced.&quot;);
+                cInfo.setPriceCleared(// 
+                demandFunction.getPriceByIndex(// 
+                dindex - 1));
+                cInfo.setEnergyCleared(supplyFunction.getEnergyByIndex(sindex) - 1);
+                return cInfo;
+            } else {
+                log.debug(&quot;Demand index not advanced.&quot;);
+                cInfo.setPriceCleared(demandFunction.getPriceByIndex(dindex));
+                cInfo.setEnergyCleared(supplyFunction.getEnergyByIndex(sindex) - 1);
+                return cInfo;
+            }
+        }
+    }
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g1Jb0ckyEee485SK6jFBfQ" name="findIntersection" specification="_g1HmoMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    int sindex = 0;
+    int dindex = 0;
+    if (supplyFunction.getPriceByIndex(0) > demandFunction.getPriceByIndex(demandFunction.maxPriceIndex())) {
+        log.info(&quot;All offers are above bids - no intersection!&quot;);
+        cInfo.setPriceCleared(Float.NaN);
+        cInfo.setEnergyCleared(0.0f);
+        return cInfo;
+    }
+    if (supplyFunction.getPriceByIndex(supplyFunction.maxPriceIndex()) &lt; demandFunction.getPriceByIndex(0)) {
+        log.info(&quot;All offers are below bids - assign highest offer price&quot;);
+        cInfo.setPriceCleared(supplyFunction.getPriceByIndex(supplyFunction.maxPriceIndex()));
+        // assign overall energy supply:
+        cInfo.setEnergyCleared(supplyFunction.getEnergyByIndex(supplyFunction.maxPriceIndex()));
+        return cInfo;
+    }
+    // Increase indices in turns until offered energy is above or equal to demanded energy for consecutive prices:
+    while (supplyFunction.getEnergyByIndex(sindex) &lt; demandFunction.getEnergyByIndex(dindex)) {
+        // advance demand (until next price would be below the next supply price)
+        while (demandFunction.getPriceByIndex(dindex + 1) &lt;= supplyFunction.getPriceByIndex(sindex + 1)) {
+            dindex++;
+            if (supplyFunction.getEnergyByIndex(sindex) >= demandFunction.getEnergyByIndex(dindex + 1)) {
+                log.debug(&quot;Indices of clearing price: Supply> &quot; + sindex + &quot; / Demand> &quot; + dindex);
+                cInfo.setPriceCleared(demandFunction.getPriceByIndex(dindex));
+                cInfo.setEnergyCleared(supplyFunction.getEnergyByIndex(sindex));
+                return cInfo;
+            }
+        }
+        // advance supply (until next price would be below the next demans price)
+        while (demandFunction.getPriceByIndex(dindex + 1) >= supplyFunction.getPriceByIndex(sindex + 1)) {
+            sindex++;
+            if (supplyFunction.getEnergyByIndex(sindex) >= demandFunction.getEnergyByIndex(dindex + 1)) {
+                log.debug(&quot;Indices of clearing price: Supply> &quot; + sindex + &quot; / Demand> &quot; + dindex);
+                cInfo.setPriceCleared(supplyFunction.getPriceByIndex(sindex));
+                cInfo.setEnergyCleared(demandFunction.getEnergyByIndex(dindex + 1));
+                return cInfo;
+            }
+        }
+    }
+    assert (false);
+    return cInfo;
+</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g02g4MkyEee485SK6jFBfQ" name="clearMarket" visibility="public" method="_g08AcMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g04WEMkyEee485SK6jFBfQ" name="requests" type="_ghb1oMkyEee485SK6jFBfQ">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g05kMMkyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g06LQMkyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g06yUMkyEee485SK6jFBfQ" name="cInfo" type="_gix5cMkyEee485SK6jFBfQ"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g09OkMkyEee485SK6jFBfQ" name="doClearing" visibility="protected" method="_g0_DwMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g091oMkyEee485SK6jFBfQ" name="requests" type="_ghb1oMkyEee485SK6jFBfQ">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g0-csMkyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g0-csckyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g0-csskyEee485SK6jFBfQ" name="cInfo" type="_gix5cMkyEee485SK6jFBfQ"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g1AR4MkyEee485SK6jFBfQ" name="findIntersectionOld" visibility="public" method="_g1GYgMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g1CuIMkyEee485SK6jFBfQ" type="_gix5cMkyEee485SK6jFBfQ" direction="return"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g1DVMMkyEee485SK6jFBfQ" name="supplyFunction" type="_g0_q0ckyEee485SK6jFBfQ"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g1EjUMkyEee485SK6jFBfQ" name="demandFunction" type="_g0_q0skyEee485SK6jFBfQ"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g1FKYMkyEee485SK6jFBfQ" name="cInfo" type="_gix5cMkyEee485SK6jFBfQ"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g1HmoMkyEee485SK6jFBfQ" name="findIntersection" visibility="public" method="_g1Jb0ckyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g1INsMkyEee485SK6jFBfQ" type="_gix5cMkyEee485SK6jFBfQ" direction="return"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g1I0wMkyEee485SK6jFBfQ" name="supplyFunction" type="_g0_q0ckyEee485SK6jFBfQ"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g1I0wckyEee485SK6jFBfQ" name="demandFunction" type="_g0_q0skyEee485SK6jFBfQ"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g1Jb0MkyEee485SK6jFBfQ" name="cInfo" type="_gix5cMkyEee485SK6jFBfQ"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_g1NGMMkyEee485SK6jFBfQ" name="ThreadPoolTaskSchedulerConfig" visibility="public">
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g1NtQMkyEee485SK6jFBfQ" name="poolSize" visibility="private" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_g1OUUMkyEee485SK6jFBfQ" name="defaultValue">
+                        <language>JAVA</language>
+                        <body>5</body>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g1PicMkyEee485SK6jFBfQ" name="scheduler" specification="_g1O7YMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    ThreadPoolTaskScheduler threadPoolTaskScheduler = new ThreadPoolTaskScheduler();
+    threadPoolTaskScheduler.setPoolSize(poolSize);
+    threadPoolTaskScheduler.setThreadNamePrefix(&quot;ThreadPoolTaskScheduler&quot;);
+    return threadPoolTaskScheduler;
+</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g1O7YMkyEee485SK6jFBfQ" name="scheduler" visibility="public" method="_g1PicMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g1O7YckyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_ggrnsMkyEee485SK6jFBfQ" name="repos">
+                  <packagedElement xmi:type="uml:Interface" xmi:id="_g-SJsMkyEee485SK6jFBfQ" name="UserAccountRepository" visibility="public">
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g-bToMkyEee485SK6jFBfQ" name="findByName" visibility="private">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g-b6sMkyEee485SK6jFBfQ" type="_g1uqoMkyEee485SK6jFBfQ" direction="return"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g-dI0MkyEee485SK6jFBfQ" name="name"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Interface" xmi:id="_hRhOwMkyEee485SK6jFBfQ" name="MarketEnergyRequestRepository" visibility="public">
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hRh10ckyEee485SK6jFBfQ" name="findById" visibility="private">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRic4MkyEee485SK6jFBfQ" type="_ghb1oMkyEee485SK6jFBfQ" direction="return">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hRic4ckyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hRic4skyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRic48kyEee485SK6jFBfQ" name="id">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_NeU5EPaLEeW5KOK8aDMdgA"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hRic5MkyEee485SK6jFBfQ" name="listAll" visibility="private">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRjD8MkyEee485SK6jFBfQ" type="_ghb1oMkyEee485SK6jFBfQ" direction="return">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hRjD8ckyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hRjD8skyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hRjD88kyEee485SK6jFBfQ" name="findAllSince" visibility="private">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRjrAMkyEee485SK6jFBfQ" type="_ghb1oMkyEee485SK6jFBfQ" direction="return">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hRjrAckyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hRjrAskyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRkSEMkyEee485SK6jFBfQ" name="submissionTime">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hRkSEckyEee485SK6jFBfQ" name="findAllSinceUntil" visibility="private">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRk5IMkyEee485SK6jFBfQ" type="_ghb1oMkyEee485SK6jFBfQ" direction="return">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hRlgMMkyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hRlgMckyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRmHQMkyEee485SK6jFBfQ" name="sinceTime">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRmHQckyEee485SK6jFBfQ" name="untilTime">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hRmuUMkyEee485SK6jFBfQ" name="findAllByInterval" visibility="private">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRnVYMkyEee485SK6jFBfQ" type="_ghb1oMkyEee485SK6jFBfQ" direction="return">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hRnVYckyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hRnVYskyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRnVY8kyEee485SK6jFBfQ" name="startTime">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRn8cMkyEee485SK6jFBfQ" name="endTime">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hRojgMkyEee485SK6jFBfQ" name="findAllByIntervalAndSubmissionTime" visibility="private">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRojgckyEee485SK6jFBfQ" type="_ghb1oMkyEee485SK6jFBfQ" direction="return">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hRpKkMkyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hRpKkckyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRpKkskyEee485SK6jFBfQ" name="startTime">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRpxoMkyEee485SK6jFBfQ" name="endTime">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRqYsMkyEee485SK6jFBfQ" name="sinceTime">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRqYsckyEee485SK6jFBfQ" name="untilTime">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hRq_wMkyEee485SK6jFBfQ" name="findByUsername" visibility="private">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRq_wckyEee485SK6jFBfQ" type="_ghb1oMkyEee485SK6jFBfQ" direction="return"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRrm0MkyEee485SK6jFBfQ" name="username"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hRsN4MkyEee485SK6jFBfQ" name="finduserIdById" visibility="private">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hRs08MkyEee485SK6jFBfQ" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_NeU5EPaLEeW5KOK8aDMdgA"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hR1X0MkyEee485SK6jFBfQ" name="id">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hR1-4MkyEee485SK6jFBfQ" name="findByCustomId" visibility="private">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hR2l8MkyEee485SK6jFBfQ" type="_ghb1oMkyEee485SK6jFBfQ" direction="return"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hR3NAMkyEee485SK6jFBfQ" name="uid">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hR4bIMkyEee485SK6jFBfQ" name="cid"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Interface" xmi:id="_hIw7YMkyEee485SK6jFBfQ" name="ClearingInfoRepository" visibility="public">
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hIzXoMkyEee485SK6jFBfQ" name="findClearingInfoAfterBefore" visibility="private">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hIz-sMkyEee485SK6jFBfQ" type="_gix5cMkyEee485SK6jFBfQ" direction="return">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hI1M0MkyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hI1z4MkyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hI3CAMkyEee485SK6jFBfQ" name="clearingTimeAfter">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hI4QIMkyEee485SK6jFBfQ" name="clearingTimeBefore">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hI5eQMkyEee485SK6jFBfQ" name="findClearingInfoFromTime" visibility="private">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hI7TcMkyEee485SK6jFBfQ" type="_gix5cMkyEee485SK6jFBfQ" direction="return">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hI9vsMkyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hI-WwMkyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hI-90MkyEee485SK6jFBfQ" name="clearingTime">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hJAL8MkyEee485SK6jFBfQ" name="findLatestClearingInfo" visibility="private">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hJAzAMkyEee485SK6jFBfQ" type="_gix5cMkyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hJBaEMkyEee485SK6jFBfQ" name="findById" visibility="private">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hJCBIMkyEee485SK6jFBfQ" type="_gix5cMkyEee485SK6jFBfQ" direction="return"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hJDPQMkyEee485SK6jFBfQ" name="id">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hJDPQckyEee485SK6jFBfQ" name="findAll" visibility="private">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hJFEcMkyEee485SK6jFBfQ" type="_gix5cMkyEee485SK6jFBfQ" direction="return">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hJG5oMkyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hJIHwMkyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Interface" xmi:id="_hNXHgMkyEee485SK6jFBfQ" name="MMarketProductRepository" visibility="public"/>
+                  <packagedElement xmi:type="uml:Interface" xmi:id="_hDRXYMkyEee485SK6jFBfQ" name="MarketProductRepository" visibility="public"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_ghVvAMkyEee485SK6jFBfQ" name="model">
+                  <packagedElement xmi:type="uml:Class" xmi:id="_ghWWEMkyEee485SK6jFBfQ" name="MarketProductList" visibility="public">
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g2b1QMkyEee485SK6jFBfQ" name="tradedProducts" visibility="public" type="_g2Yx8MkyEee485SK6jFBfQ" isUnique="false"/>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_ghb1oMkyEee485SK6jFBfQ" name="MarketEnergyRequest" visibility="public">
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g3ZekMkyEee485SK6jFBfQ" name="maxID" visibility="private" isStatic="true" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_g3aFoMkyEee485SK6jFBfQ" name="defaultValue">
+                        <language>JAVA</language>
+                        <body>0</body>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g3aFockyEee485SK6jFBfQ" name="id" visibility="private" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_g3assMkyEee485SK6jFBfQ" name="defaultValue">
+                        <language>JAVA</language>
+                        <body>-1l</body>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g3assckyEee485SK6jFBfQ" name="userAccount" visibility="private" type="_g1uqoMkyEee485SK6jFBfQ" isUnique="false"/>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g3bTwMkyEee485SK6jFBfQ" name="request" visibility="private" isUnique="false"/>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g3bTwckyEee485SK6jFBfQ" name="submissionTime" visibility="private" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                    </ownedAttribute>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g3e-IMkyEee485SK6jFBfQ" name="MarketEnergyRequest" specification="_g3b60MkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g3mS4MkyEee485SK6jFBfQ" name="MarketEnergyRequest" specification="_g3gMQMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.id = id;
+    this.userAccount = userAccount;
+    this.request = request;
+    this.submissionTime = System.currentTimeMillis();
+    maxID = this.id > maxID ? this.id : maxID;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g3rycMkyEee485SK6jFBfQ" name="MarketEnergyRequest" specification="_g3nhAMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this(++maxID, null, request);
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g3zuQMkyEee485SK6jFBfQ" name="MarketEnergyRequest" specification="_g3tnoMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this(++maxID, userAccount, request);
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g31jcMkyEee485SK6jFBfQ" name="getUserAccount" specification="_g30VUMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return userAccount;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g33_sMkyEee485SK6jFBfQ" name="setUserAccount" specification="_g32xkMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.userAccount = userAccount;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g37qEMkyEee485SK6jFBfQ" name="getId" specification="_g35N0MkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return id;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g3-GUMkyEee485SK6jFBfQ" name="setID" specification="_g384MMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.id = id;
+    maxID = this.id > maxID ? this.id : maxID;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g4BJoMkyEee485SK6jFBfQ" name="getRequest" specification="_g3_UcMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return request;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g4Dl4MkyEee485SK6jFBfQ" name="setRequest" specification="_g4BwsMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.request = request;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g4KTkMkyEee485SK6jFBfQ" name="setStatus" specification="_g4IeYMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.request.status = status.getId();
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g4Mv0ckyEee485SK6jFBfQ" name="getStatus" specification="_g4LhsMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return EnergyRequest.Status.getStatusById(this.request.status);
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g4N98ckyEee485SK6jFBfQ" name="getSubmissionTime" specification="_g4NW4MkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return this.submissionTime;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g4PzIckyEee485SK6jFBfQ" name="toString" specification="_g4PMEMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    StringBuffer buffer = new StringBuffer();
+    buffer.append(&quot;(&quot; + this.getId() + &quot; / &quot;);
+    buffer.append(&quot;(&quot; + this.getRequest().id + &quot;): &quot;);
+    buffer.append(new SimpleDateFormat(&quot;hh:mm:ss&quot;).format(new Date(this.getRequest().startTime)) + &quot; > &quot;);
+    buffer.append(new SimpleDateFormat(&quot;hh:mm:ss&quot;).format(new Date(this.getRequest().endTime)) + &quot;: &quot;);
+    buffer.append(this.getRequest().priceRequested);
+    buffer.append(&quot; (&quot; + this.getRequest().energyRequested + &quot;)&quot;);
+    buffer.append(&quot; Status: &quot; + this.getStatus() + &quot;)&quot;);
+    return buffer.toString();
+</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g3b60MkyEee485SK6jFBfQ" name="MarketEnergyRequest" visibility="protected" method="_g3e-IMkyEee485SK6jFBfQ"/>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g3gMQMkyEee485SK6jFBfQ" name="MarketEnergyRequest" visibility="public" method="_g3mS4MkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g3kdsMkyEee485SK6jFBfQ" name="id">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g3lEwMkyEee485SK6jFBfQ" name="userAccount" type="_g1uqoMkyEee485SK6jFBfQ"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g3lr0MkyEee485SK6jFBfQ" name="request"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g3nhAMkyEee485SK6jFBfQ" name="MarketEnergyRequest" visibility="public" method="_g3rycMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g3rLYMkyEee485SK6jFBfQ" name="request"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g3tnoMkyEee485SK6jFBfQ" name="MarketEnergyRequest" visibility="public" method="_g3zuQMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g3ygIMkyEee485SK6jFBfQ" name="userAccount" type="_g1uqoMkyEee485SK6jFBfQ"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g3zHMMkyEee485SK6jFBfQ" name="request"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g30VUMkyEee485SK6jFBfQ" name="getUserAccount" visibility="public" method="_g31jcMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g308YMkyEee485SK6jFBfQ" type="_g1uqoMkyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g32xkMkyEee485SK6jFBfQ" name="setUserAccount" visibility="public" method="_g33_sMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g33YoMkyEee485SK6jFBfQ" name="userAccount" type="_g1uqoMkyEee485SK6jFBfQ"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g35N0MkyEee485SK6jFBfQ" name="getId" visibility="public" method="_g37qEMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g37DAMkyEee485SK6jFBfQ" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_NeU5EPaLEeW5KOK8aDMdgA"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g384MMkyEee485SK6jFBfQ" name="setID" visibility="public" method="_g3-GUMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g39fQMkyEee485SK6jFBfQ" name="id">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g3_UcMkyEee485SK6jFBfQ" name="getRequest" visibility="public" method="_g4BJoMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g4AikMkyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g4BwsMkyEee485SK6jFBfQ" name="setRequest" visibility="public" method="_g4Dl4MkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g4C-0MkyEee485SK6jFBfQ" name="request"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g4IeYMkyEee485SK6jFBfQ" name="setStatus" visibility="public" method="_g4KTkMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g4JsgMkyEee485SK6jFBfQ" name="status"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g4LhsMkyEee485SK6jFBfQ" name="getStatus" visibility="public" method="_g4Mv0ckyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g4Mv0MkyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g4NW4MkyEee485SK6jFBfQ" name="getSubmissionTime" visibility="public" method="_g4N98ckyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g4N98MkyEee485SK6jFBfQ" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g4PMEMkyEee485SK6jFBfQ" name="toString" visibility="public" method="_g4PzIckyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g4PzIMkyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_gix5cMkyEee485SK6jFBfQ" name="ClearingInfo" visibility="public">
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g2jKAMkyEee485SK6jFBfQ" name="id" visibility="private" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_g2jxEMkyEee485SK6jFBfQ" name="defaultValue">
+                        <language>JAVA</language>
+                        <body>-1l</body>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g2jxEckyEee485SK6jFBfQ" name="priceCleared" visibility="private" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g2jxEskyEee485SK6jFBfQ" name="energyCleared" visibility="private" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g2kYIMkyEee485SK6jFBfQ" name="clearingTime" visibility="private" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g2kYIckyEee485SK6jFBfQ" name="productPattern" visibility="private" isUnique="false"/>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g2k_MMkyEee485SK6jFBfQ" name="deliveryPeriodStart" visibility="private" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                    </ownedAttribute>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g2rF0MkyEee485SK6jFBfQ" name="ClearingInfo" specification="_g2k_MckyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g2zosMkyEee485SK6jFBfQ" name="ClearingInfo" specification="_g2tiEMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.clearingTime = clearingTime;
+    this.productPattern = productPattern;
+    this.deliveryPeriodStart = startTime;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g2_18MkyEee485SK6jFBfQ" name="ClearingInfo" specification="_g22E8MkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this(productPattern, startTime, clearingTime);
+    this.priceCleared = clearingPrice;
+    this.energyCleared = clearingEnergy;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g3BEEMkyEee485SK6jFBfQ" name="setPriceCleared" specification="_g3AdAMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.priceCleared = priceCleared;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g3BrIMkyEee485SK6jFBfQ" name="setEnergyCleared" specification="_g3BEEckyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.energyCleared = energyCleared;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g3CSMMkyEee485SK6jFBfQ" name="getPriceCleared" specification="_g3BrIckyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return this.priceCleared;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g3EucMkyEee485SK6jFBfQ" name="getEnergyCleared" specification="_g3CSMckyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return this.energyCleared;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g3GjoMkyEee485SK6jFBfQ" name="getClearingTime" specification="_g3FVgMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return this.clearingTime;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g3Jm8MkyEee485SK6jFBfQ" name="getProductPattern" specification="_g3HxwMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return this.productPattern;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g3PGgMkyEee485SK6jFBfQ" name="getIntervalStart" specification="_g3NRUMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return this.deliveryPeriodStart;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g3Sw4MkyEee485SK6jFBfQ" name="toString" specification="_g3Q7sMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return this.productPattern + &quot; @ &quot; + new Date(this.getClearingTime()).toString() + &quot;: &quot; + this.energyCleared + &quot;@&quot; + this.priceCleared;
+</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g2k_MckyEee485SK6jFBfQ" name="ClearingInfo" visibility="public" method="_g2rF0MkyEee485SK6jFBfQ"/>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g2tiEMkyEee485SK6jFBfQ" name="ClearingInfo" visibility="public" method="_g2zosMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g2xzgMkyEee485SK6jFBfQ" name="productPattern"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g2yakMkyEee485SK6jFBfQ" name="startTime">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g2zBoMkyEee485SK6jFBfQ" name="clearingTime">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g22E8MkyEee485SK6jFBfQ" name="ClearingInfo" visibility="public" method="_g2_18MkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g28LkMkyEee485SK6jFBfQ" name="productPattern"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g28yoMkyEee485SK6jFBfQ" name="startTime">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g29ZsMkyEee485SK6jFBfQ" name="clearingTime">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g2-AwMkyEee485SK6jFBfQ" name="clearingPrice">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g2-n0MkyEee485SK6jFBfQ" name="clearingEnergy">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g3AdAMkyEee485SK6jFBfQ" name="setPriceCleared" visibility="public" method="_g3BEEMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g3AdAckyEee485SK6jFBfQ" name="priceCleared">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g3BEEckyEee485SK6jFBfQ" name="setEnergyCleared" visibility="public" method="_g3BrIMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g3BEEskyEee485SK6jFBfQ" name="energyCleared">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g3BrIckyEee485SK6jFBfQ" name="getPriceCleared" visibility="public" method="_g3CSMMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g3BrIskyEee485SK6jFBfQ" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g3CSMckyEee485SK6jFBfQ" name="getEnergyCleared" visibility="public" method="_g3EucMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g3EHYMkyEee485SK6jFBfQ" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g3FVgMkyEee485SK6jFBfQ" name="getClearingTime" visibility="public" method="_g3GjoMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g3F8kMkyEee485SK6jFBfQ" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g3HxwMkyEee485SK6jFBfQ" name="getProductPattern" visibility="public" method="_g3Jm8MkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g3IY0MkyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g3NRUMkyEee485SK6jFBfQ" name="getIntervalStart" visibility="public" method="_g3PGgMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g3OfcMkyEee485SK6jFBfQ" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g3Q7sMkyEee485SK6jFBfQ" name="toString" visibility="public" method="_g3Sw4MkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g3SJ0MkyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_gkCdsMkyEee485SK6jFBfQ" name="ClearingData" visibility="public">
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g4RBQMkyEee485SK6jFBfQ" name="offersEnergy" visibility="public" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+                      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g4SPYMkyEee485SK6jFBfQ"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g4S2cMkyEee485SK6jFBfQ" value="*"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g4TdgMkyEee485SK6jFBfQ" name="offersPrices" visibility="public" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+                      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g4UEkMkyEee485SK6jFBfQ"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g4UroMkyEee485SK6jFBfQ" value="*"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g4VSsMkyEee485SK6jFBfQ" name="bidsEnergy" visibility="public" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+                      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g4V5wMkyEee485SK6jFBfQ"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g4Wg0MkyEee485SK6jFBfQ" value="*"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g4XH4MkyEee485SK6jFBfQ" name="bidsPrices" visibility="public" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+                      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g4YWAMkyEee485SK6jFBfQ"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g4Y9EMkyEee485SK6jFBfQ" value="*"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g4ZkIMkyEee485SK6jFBfQ" name="clearingPrice" visibility="public" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+                    </ownedAttribute>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_gz--MMkyEee485SK6jFBfQ" name="MMarketProductPattern" visibility="public">
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g4cAYMkyEee485SK6jFBfQ" name="clearingProvider" visibility="private" type="_gvs7IMkyEee485SK6jFBfQ" isUnique="false"/>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g4dOgMkyEee485SK6jFBfQ" name="mmproductId" visibility="protected" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g4d1kMkyEee485SK6jFBfQ" name="productPattern" visibility="private" isUnique="false"/>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g4fDsMkyEee485SK6jFBfQ" name="clearingId" visibility="private" isUnique="false">
+                      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_g4gR0MkyEee485SK6jFBfQ" name="defaultValue">
+                        <language>JAVA</language>
+                        <body>ClearingProvider.UNIFORM</body>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g4g44MkyEee485SK6jFBfQ" name="active" visibility="private" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_g4hf8MkyEee485SK6jFBfQ" name="defaultValue">
+                        <language>JAVA</language>
+                        <body>true</body>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g4sfEMkyEee485SK6jFBfQ" name="MMarketProductPattern" specification="_g4j8MMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.productPattern = productPattern;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g4wJcMkyEee485SK6jFBfQ" name="MMarketProductPattern" specification="_g4sfEckyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g4x-ockyEee485SK6jFBfQ" name="getProductPattern" specification="_g4xXkMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return productPattern;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g4zMwMkyEee485SK6jFBfQ" name="stopClearing" specification="_g4ylsMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.active = false;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g42QEMkyEee485SK6jFBfQ" name="isActive" specification="_g40a4MkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return this.active;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g44sUMkyEee485SK6jFBfQ" name="getClearingId" specification="_g44FQMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return this.clearingId;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g47voMkyEee485SK6jFBfQ" name="setClearingId" specification="_g456cMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.clearingId = clearingId;
+</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g4j8MMkyEee485SK6jFBfQ" name="MMarketProductPattern" visibility="public" method="_g4sfEMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g4rQ8MkyEee485SK6jFBfQ" name="productPattern"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g4sfEckyEee485SK6jFBfQ" name="MMarketProductPattern" visibility="public" method="_g4wJcMkyEee485SK6jFBfQ"/>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g4xXkMkyEee485SK6jFBfQ" name="getProductPattern" visibility="public" method="_g4x-ockyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g4x-oMkyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g4ylsMkyEee485SK6jFBfQ" name="stopClearing" visibility="public" method="_g4zMwMkyEee485SK6jFBfQ"/>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g40a4MkyEee485SK6jFBfQ" name="isActive" visibility="public" method="_g42QEMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g41B8MkyEee485SK6jFBfQ" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g44FQMkyEee485SK6jFBfQ" name="getClearingId" visibility="public" method="_g44sUMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g44FQckyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g456cMkyEee485SK6jFBfQ" name="setClearingId" visibility="public" method="_g47voMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g47IkMkyEee485SK6jFBfQ" name="clearingId"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_g1uqoMkyEee485SK6jFBfQ" name="UserAccount" visibility="public">
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g1uqockyEee485SK6jFBfQ" name="id" visibility="private" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g1vRsMkyEee485SK6jFBfQ" name="name" visibility="private" isUnique="false"/>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g1v4wMkyEee485SK6jFBfQ" name="password" visibility="private" isUnique="false"/>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g1wf0skyEee485SK6jFBfQ" name="role" visibility="private" type="_hW9vcMkyEee485SK6jFBfQ" isUnique="false"/>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_g15pwMkyEee485SK6jFBfQ" name="bids" visibility="private" isUnique="false">
+                      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_g15pwckyEee485SK6jFBfQ" name="defaultValue">
+                        <language>JAVA</language>
+                        <body>new HashSet&lt;>()</body>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g1xG4ckyEee485SK6jFBfQ" name="getPassword" specification="_g1wf08kyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return password;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g1yVAMkyEee485SK6jFBfQ" name="setPassword" specification="_g1xt8MkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.password = password;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g2BlkMkyEee485SK6jFBfQ" name="UserAccount" specification="_g15pwskyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g2NLwMkyEee485SK6jFBfQ" name="UserAccount" specification="_g2EB0MkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.name = name;
+    this.id = id;
+    this.role = role;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g2OZ4ckyEee485SK6jFBfQ" name="getName" specification="_g2Ny0MkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return name;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g2SrUMkyEee485SK6jFBfQ" name="setName" specification="_g2PoAMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.name = name;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g2VHkMkyEee485SK6jFBfQ" name="getId" specification="_g2TSYMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return id;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g2Xj0MkyEee485SK6jFBfQ" name="getRole" specification="_g2WVsMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return this.role;
+</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g1wf08kyEee485SK6jFBfQ" name="getPassword" visibility="public" method="_g1xG4ckyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g1xG4MkyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g1xt8MkyEee485SK6jFBfQ" name="setPassword" visibility="public" method="_g1yVAMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g1xt8ckyEee485SK6jFBfQ" name="password"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g15pwskyEee485SK6jFBfQ" name="UserAccount" visibility="protected" method="_g2BlkMkyEee485SK6jFBfQ"/>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g2EB0MkyEee485SK6jFBfQ" name="UserAccount" visibility="public" method="_g2NLwMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g2KvgMkyEee485SK6jFBfQ" name="name"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g2L9oMkyEee485SK6jFBfQ" name="id">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g2MksMkyEee485SK6jFBfQ" name="role" type="_hW9vcMkyEee485SK6jFBfQ"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g2Ny0MkyEee485SK6jFBfQ" name="getName" visibility="public" method="_g2OZ4ckyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g2OZ4MkyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g2PoAMkyEee485SK6jFBfQ" name="setName" visibility="public" method="_g2SrUMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g2SEQMkyEee485SK6jFBfQ" name="name"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g2TSYMkyEee485SK6jFBfQ" name="getId" visibility="public" method="_g2VHkMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g2UggMkyEee485SK6jFBfQ" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g2WVsMkyEee485SK6jFBfQ" name="getRole" visibility="public" method="_g2Xj0MkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g2W8wMkyEee485SK6jFBfQ" type="_hW9vcMkyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_g2Yx8MkyEee485SK6jFBfQ" name="Iterable"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_gj4FoMkyEee485SK6jFBfQ" name="EnaviMarketInspectionController" visibility="public">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_gj7wAMkyEee485SK6jFBfQ" name="log" visibility="private" isUnique="false">
+                    <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_gj7wAckyEee485SK6jFBfQ" name="defaultValue">
+                      <language>JAVA</language>
+                      <body>LogFactory.getLog(EnaviMarketInspectionController.class)</body>
+                    </defaultValue>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_gj-zUMkyEee485SK6jFBfQ" name="requestRepository" visibility="private" type="_hRhOwMkyEee485SK6jFBfQ" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_gkABcMkyEee485SK6jFBfQ" name="clearingPriceRepos" visibility="private" type="_hIw7YMkyEee485SK6jFBfQ" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_gkBPkMkyEee485SK6jFBfQ" name="mmProductRepos" visibility="private" type="_hNXHgMkyEee485SK6jFBfQ" isUnique="false"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gkKZgMkyEee485SK6jFBfQ" name="getDemandCurve" specification="_gkB2oMkyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    List&lt;MarketEnergyRequest> requests = this.requestRepository.findAllSinceUntil(since, until);
+    ClearingData cdata = new ClearingData();
+    if (requests.isEmpty()) {
+        log.info(&quot;No requests stored between &quot; + SimpleDateFormat.getInstance().format(new Date(since)) + &quot; and &quot; + SimpleDateFormat.getInstance().format(new Date(until)) + &quot;!&quot;);
+        cdata.clearingPrice = Float.NaN;
+    } else {
+        PriceEnergyFunctionInitialiser funInitialiser = new PriceEnergyFunctionInitialiser(requests);
+        DemandEnergyFunction demandFunction = funInitialiser.getDemandPriceEnergyFunction();
+        SupplyPriceEnergyFunction supplyFunction = funInitialiser.getOfferPriceEnergyFunction();
+        cdata.bidsPrices = demandFunction.getPriceSeries();
+        cdata.bidsEnergy = demandFunction.getEnergySeries();
+        cdata.offersPrices = supplyFunction.getPriceSeries();
+        cdata.offersEnergy = supplyFunction.getEnergySeries();
+    // TODO
+    // cdata.clearingPrice = asksFunction.getIntersectionPrice(offersFunction);
+    }
+    return cdata;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gkUxkMkyEee485SK6jFBfQ" name="getDemandCurveByInterval" specification="_gkLnoMkyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    List&lt;MarketEnergyRequest> requests = this.requestRepository.findAllByInterval(startTime, endTime);
+    if (requests.isEmpty()) {
+        log.warn(&quot;No requests stored for intervals between &quot; + SimpleDateFormat.getInstance().format(new Date(startTime)) + &quot; and &quot; + SimpleDateFormat.getInstance().format(new Date(endTime)) + &quot;!&quot;);
+        return null;
+    } else {
+        PriceEnergyFunctionInitialiser funInitialiser = new PriceEnergyFunctionInitialiser(requests);
+        DemandEnergyFunction demandFunction = funInitialiser.getDemandPriceEnergyFunction();
+        SupplyPriceEnergyFunction supplyFunction = funInitialiser.getOfferPriceEnergyFunction();
+        ClearingData cdata = new ClearingData();
+        cdata.bidsPrices = demandFunction.getPriceSeries();
+        cdata.bidsEnergy = demandFunction.getEnergySeries();
+        cdata.offersPrices = supplyFunction.getPriceSeries();
+        cdata.offersEnergy = supplyFunction.getEnergySeries();
+        // cdata.clearingPrice = asksFunction.getIntersectionPrice(offersFunction);
+        return cdata;
+    }
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gkZqEMkyEee485SK6jFBfQ" name="getDemandCurveById" specification="_gkUxkckyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    ClearingInfo cp = clearingPriceRepos.findById(clearingId);
+    return this.getDemandCurve(Utils.getMarketClosingTimeForBidStartTime(cp.getClearingTime(), cp.getProductPattern().auctionInterval, ZoneId.of(MarketProductClearer.zone)), cp.getClearingTime());
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gkjbEMkyEee485SK6jFBfQ" name="getProductInformation" specification="_gkZqEckyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    Iterable&lt;MMarketProductPattern> patterns = this.mmProductRepos.findAll();
+    return patterns;
+</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_gkB2oMkyEee485SK6jFBfQ" name="getDemandCurve" visibility="public" method="_gkKZgMkyEee485SK6jFBfQ">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_gkDr0MkyEee485SK6jFBfQ" type="_gkCdsMkyEee485SK6jFBfQ" direction="return"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_gkGIEMkyEee485SK6jFBfQ" name="since">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_gkJycMkyEee485SK6jFBfQ" name="until">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_gkLnoMkyEee485SK6jFBfQ" name="getDemandCurveByInterval" visibility="public" method="_gkUxkMkyEee485SK6jFBfQ">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_gkM1wMkyEee485SK6jFBfQ" type="_gkCdsMkyEee485SK6jFBfQ" direction="return"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_gkQgIMkyEee485SK6jFBfQ" name="startTime">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_gkS8YMkyEee485SK6jFBfQ" name="endTime">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_gkUxkckyEee485SK6jFBfQ" name="getDemandCurveById" visibility="public" method="_gkZqEMkyEee485SK6jFBfQ">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_gkVYoMkyEee485SK6jFBfQ" type="_gkCdsMkyEee485SK6jFBfQ" direction="return"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_gkX04MkyEee485SK6jFBfQ" name="clearingId">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_gkZqEckyEee485SK6jFBfQ" name="getProductInformation" visibility="public" method="_gkjbEMkyEee485SK6jFBfQ">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_gki0AMkyEee485SK6jFBfQ" type="_gkd7gMkyEee485SK6jFBfQ" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_gkd7gMkyEee485SK6jFBfQ" name="Iterable"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_gk2WAMkyEee485SK6jFBfQ" name="EnaviMarketTestController" visibility="public">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_gk3kIMkyEee485SK6jFBfQ" name="log" visibility="private" isUnique="false">
+                    <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_gk5ZUMkyEee485SK6jFBfQ" name="defaultValue">
+                      <language>JAVA</language>
+                      <body>LogFactory.getLog(EnaviMarketTestController.class)</body>
+                    </defaultValue>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_gk7OgMkyEee485SK6jFBfQ" name="admin_username" visibility="private" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_gk9DsMkyEee485SK6jFBfQ" name="admin_password" visibility="private" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_gk9qwMkyEee485SK6jFBfQ" name="user_username" visibility="private" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_gk-44MkyEee485SK6jFBfQ" name="user_password" visibility="private" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_gk_f8MkyEee485SK6jFBfQ" name="clearing" visibility="private" type="_gvanQMkyEee485SK6jFBfQ" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_glAHAMkyEee485SK6jFBfQ" name="userRepos" visibility="private" type="_g-SJsMkyEee485SK6jFBfQ" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_glAHAckyEee485SK6jFBfQ" name="requestRepos" visibility="private" type="_hRhOwMkyEee485SK6jFBfQ" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_glAuEMkyEee485SK6jFBfQ" name="clearingPriceRepos" visibility="private" type="_hIw7YMkyEee485SK6jFBfQ" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_glBVIMkyEee485SK6jFBfQ" name="mmproductRepos" visibility="private" type="_hNXHgMkyEee485SK6jFBfQ" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_glB8MMkyEee485SK6jFBfQ" name="mproductRepos" visibility="private" type="_hDRXYMkyEee485SK6jFBfQ" isUnique="false"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_glCjQMkyEee485SK6jFBfQ" name="openingTimeMS" visibility="private" isUnique="false">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                    <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_glDKUMkyEee485SK6jFBfQ" name="defaultValue">
+                      <language>JAVA</language>
+                      <body>1000 * 60 * 60 * 24</body>
+                    </defaultValue>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_glDxYMkyEee485SK6jFBfQ" name="clearingIntervalMS" visibility="private" isLeaf="true" isUnique="false">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                    <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_glE_gMkyEee485SK6jFBfQ" name="defaultValue">
+                      <language>JAVA</language>
+                      <body>1000 * 60 * 15</body>
+                    </defaultValue>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_glGNoMkyEee485SK6jFBfQ" name="lastClearingTime" visibility="private" isUnique="false">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                    <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_glGNockyEee485SK6jFBfQ" name="defaultValue">
+                      <language>JAVA</language>
+                      <body>Long.MIN_VALUE</body>
+                    </defaultValue>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_glMUQMkyEee485SK6jFBfQ" name="product" visibility="private" isUnique="false"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_glP-oMkyEee485SK6jFBfQ" name="setup" specification="_glNiYMkyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    log.info(&quot;Create and store user account with ID 1...&quot;);
+    UserAccount uAccountAdmin = new UserAccount(this.admin_username, 1l, Role.ADMIN);
+    uAccountAdmin.setPassword(this.admin_password);
+    userRepos.save(uAccountAdmin);
+    UserAccount uAccount = new UserAccount(this.user_username, 2l, Role.USER);
+    uAccount.setPassword(this.user_password);
+    userRepos.save(uAccount);
+    // products
+    log.info(&quot;Save market information...&quot;);
+    product = new MarketProductPattern();
+    product.closingTime = &quot;-1H&quot;;
+    product.openingTime = &quot;-5H&quot;;
+    product.deliveryPeriodDuration = 1000 * 60 * 5;
+    product.firstDeliveryPeriodStart = System.currentTimeMillis() + 1000 * 60 * 3;
+    product.energyResolutionKWh = 0;
+    MMarketProductPattern mmproduct = new MMarketProductPattern(product);
+    mmproductRepos.save(mmproduct);
+    this.setupRequests();
+    return &quot;Start up done.&quot;;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_glUQEMkyEee485SK6jFBfQ" name="setupRequests" specification="_glRz0MkyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    UserAccount uAccount = userRepos.findOne(2l);
+    long starttime = mmproductRepos.findOne(1).getProductPattern().firstDeliveryPeriodStart;
+    long endtime = starttime + mmproductRepos.findOne(1).getProductPattern().deliveryPeriodDuration;
+    // requests
+    log.info(&quot;Save three energy requests ER1, ER2, and ER3...&quot;);
+    EnergyRequest erequest = new EnergyRequest();
+    erequest.id = &quot;Ask01&quot;;
+    //erequest.energyRequested = 9000f;
+    erequest.energyRequested = 4000f;
+    erequest.priceRequested = 0.12f;
+    erequest.startTime = starttime;
+    erequest.endTime = endtime;
+    requestRepos.save(new MarketEnergyRequest(1l, uAccount, erequest));
+    erequest = new EnergyRequest();
+    erequest.id = &quot;Ask02&quot;;
+    erequest.energyRequested = 3000f;
+    erequest.priceRequested = 0.09f;
+    erequest.startTime = starttime;
+    erequest.endTime = endtime;
+    requestRepos.save(new MarketEnergyRequest(2l, uAccount, erequest));
+    erequest = new EnergyRequest();
+    erequest.id = &quot;Ask03&quot;;
+    erequest.energyRequested = 4000f;
+    erequest.priceRequested = 0.19f;
+    erequest.startTime = starttime;
+    erequest.endTime = endtime;
+    requestRepos.save(new MarketEnergyRequest(1l, uAccount, erequest));
+    erequest.energyRequested = -7000f;
+    erequest.id = &quot;Offer01&quot;;
+    erequest.priceRequested = 0.10f;
+    erequest.startTime = System.currentTimeMillis() + 1000 * 60 * 60;
+    erequest.endTime = System.currentTimeMillis() + 1000 * 60 * 65;
+    requestRepos.save(new MarketEnergyRequest(1l, uAccount, erequest));
+    erequest = new EnergyRequest();
+    erequest.id = &quot;Offer02&quot;;
+    erequest.energyRequested = -3000f;
+    erequest.priceRequested = 0.13f;
+    erequest.startTime = System.currentTimeMillis() + 1000 * 60 * 60;
+    erequest.endTime = System.currentTimeMillis() + 1000 * 60 * 65;
+    requestRepos.save(new MarketEnergyRequest(2l, uAccount, erequest));
+    erequest = new EnergyRequest();
+    erequest.id = &quot;Offer03&quot;;
+    erequest.energyRequested = -2500f;
+    erequest.priceRequested = 0.15f;
+    erequest.startTime = System.currentTimeMillis() + 1000 * 60 * 60;
+    erequest.endTime = System.currentTimeMillis() + 1000 * 60 * 65;
+    requestRepos.save(new MarketEnergyRequest(1l, uAccount, erequest));
+    return &quot;Storing requests done.&quot;;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_glWsUMkyEee485SK6jFBfQ" name="findclearingPriceAll" specification="_glVeMMkyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    String result = &quot;&lt;html>&quot;;
+    for (MarketEnergyRequest request : requestRepos.findAll()) {
+        result += &quot;&lt;div>&quot; + request.toString() + &quot;&lt;/div>&quot;;
+    }
+    return result + &quot;&lt;/html>&quot;;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_glZvoMkyEee485SK6jFBfQ" name="findById" specification="_glXTYMkyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    String result = &quot;&quot;;
+    result = requestRepos.findOne(id).toString();
+    return result;
+</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_glcL4MkyEee485SK6jFBfQ" name="clear" specification="_glaWsMkyEee485SK6jFBfQ">
+                    <language>JAVA</language>
+                    <body>
+    if (product == null) {
+        throw new IllegalStateException(&quot;Server needs to be set up first!&quot;);
+    }
+    // retrieve requests since lastClearingTime:
+    log.debug(&quot;Retrieve request since&quot; + this.lastClearingTime + &quot; from &quot; + this.requestRepos);
+    List&lt;MarketEnergyRequest> requests = this.requestRepos.findAllSince(this.lastClearingTime);
+    this.clearing.clearMarket(requests, new ClearingInfo(product, product.firstDeliveryPeriodStart - 1000 * 60 * 5, System.currentTimeMillis()));
+    return &quot;Market cleared&quot;;
+</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_glNiYMkyEee485SK6jFBfQ" name="setup" visibility="public" method="_glP-oMkyEee485SK6jFBfQ">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_glOwgMkyEee485SK6jFBfQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_glRz0MkyEee485SK6jFBfQ" name="setupRequests" visibility="public" method="_glUQEMkyEee485SK6jFBfQ">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_glTB8MkyEee485SK6jFBfQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_glVeMMkyEee485SK6jFBfQ" name="findclearingPriceAll" visibility="public" method="_glWsUMkyEee485SK6jFBfQ">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_glWFQMkyEee485SK6jFBfQ" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_glXTYMkyEee485SK6jFBfQ" name="findById" visibility="public" method="_glZvoMkyEee485SK6jFBfQ">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_glYhgMkyEee485SK6jFBfQ" direction="return"/>
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_glZIkMkyEee485SK6jFBfQ" name="id">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:type="uml:Operation" xmi:id="_glaWsMkyEee485SK6jFBfQ" name="clear" visibility="public" method="_glcL4MkyEee485SK6jFBfQ">
+                    <ownedParameter xmi:type="uml:Parameter" xmi:id="_glbk0MkyEee485SK6jFBfQ" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_g0_q0MkyEee485SK6jFBfQ" name="util">
+                  <packagedElement xmi:type="uml:Class" xmi:id="_g0_q0ckyEee485SK6jFBfQ" name="SupplyPriceEnergyFunction" visibility="public">
+                    <generalization xmi:type="uml:Generalization" xmi:id="_hXsvQMkyEee485SK6jFBfQ" general="_hXWJ8MkyEee485SK6jFBfQ"/>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXvLgckyEee485SK6jFBfQ" name="SupplyPriceEnergyFunction" specification="_hXsvQckyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    currentPrice = Float.NEGATIVE_INFINITY;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXxnwMkyEee485SK6jFBfQ" name="addRequests" specification="_hXvykMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.numRequests = requests.size();
+    if (this.numRequests == 0) {
+        throw new IllegalStateException(&quot;List passed to OffersPriceList is empty&quot;);
+    }
+    this.prices = new ArrayList&lt;Float>(Math.min(this.numRequests, 50000));
+    this.energy = new ArrayList&lt;Float>(Math.min(this.numRequests, 50000));
+    for (int i = 0; i &lt; this.numRequests; i++) {
+        MarketEnergyRequest request = requests.get(i);
+        if (this.currentPrice > request.getRequest().priceRequested) {
+            throw new IllegalStateException(&quot;Adding requests must be ordered according to requests' price, &quot; + &quot;with lowest price first!&quot;);
+        } else if (this.currentPrice == request.getRequest().priceRequested) {
+            // add energy to existing record:
+            this.energy.add(this.prices.size() - 1, this.energy.get(this.prices.size() - 1) - request.getRequest().energyRequested);
+        } else {
+            // create new record:
+            this.energy.add((this.energy.size() > 0 ? this.energy.get(this.prices.size() - 1) : 0) - request.getRequest().energyRequested);
+            this.prices.add(request.getRequest().priceRequested);
+        }
+        this.currentPrice = request.getRequest().priceRequested;
+    }
+</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXsvQckyEee485SK6jFBfQ" name="SupplyPriceEnergyFunction" visibility="public" method="_hXvLgckyEee485SK6jFBfQ"/>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXvykMkyEee485SK6jFBfQ" name="addRequests" visibility="public" method="_hXxnwMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXwZoMkyEee485SK6jFBfQ" name="requests" type="_ghb1oMkyEee485SK6jFBfQ">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hXwZockyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hXxAsMkyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_g0_q0skyEee485SK6jFBfQ" name="DemandEnergyFunction" visibility="public">
+                    <generalization xmi:type="uml:Generalization" xmi:id="_hXnPsMkyEee485SK6jFBfQ" general="_hXWJ8MkyEee485SK6jFBfQ"/>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_hXqTAMkyEee485SK6jFBfQ" name="MAX_SIZE_INITIAL_ARRAYS" visibility="protected" isLeaf="true" isStatic="true" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_hXqTAckyEee485SK6jFBfQ" name="defaultValue">
+                        <language>JAVA</language>
+                        <body>50000</body>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXpr8MkyEee485SK6jFBfQ" name="DemandEnergyFunction" specification="_hXnPsckyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.currentPrice = Float.POSITIVE_INFINITY;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXrhIMkyEee485SK6jFBfQ" name="addRequests" specification="_hXqTAskyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.numRequests = requests.size();
+    if (this.numRequests == 0) {
+        throw new IllegalStateException(&quot;List passed to AsksPriceList is empty&quot;);
+    }
+    this.prices = new ArrayList&lt;Float>(Math.min(this.numRequests, MAX_SIZE_INITIAL_ARRAYS));
+    this.energy = new ArrayList&lt;Float>(Math.min(this.numRequests, MAX_SIZE_INITIAL_ARRAYS));
+    for (int i = 0; i &lt; this.numRequests; i++) {
+        MarketEnergyRequest request = requests.get(i);
+        if (this.currentPrice &lt; request.getRequest().priceRequested) {
+            throw new IllegalStateException(&quot;Adding requests must be ordered according to requests' price, &quot; + &quot;with highest price first!&quot;);
+        } else if (this.currentPrice == request.getRequest().priceRequested) {
+            // add energy to existing record:
+            this.energy.add(this.prices.size() - 1, this.energy.get(this.prices.size() - 1) + request.getRequest().energyRequested);
+        } else {
+            // create new record:
+            this.energy.add((this.energy.size() > 0 ? this.energy.get(this.prices.size() - 1) : 0) + request.getRequest().energyRequested);
+            this.prices.add(request.getRequest().priceRequested);
+        }
+        this.currentPrice = request.getRequest().priceRequested;
+    }
+    Collections.reverse(this.prices);
+    Collections.reverse(this.energy);
+</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXnPsckyEee485SK6jFBfQ" name="DemandEnergyFunction" visibility="public" method="_hXpr8MkyEee485SK6jFBfQ"/>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXqTAskyEee485SK6jFBfQ" name="addRequests" visibility="public" method="_hXrhIMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXq6EMkyEee485SK6jFBfQ" name="requests" type="_ghb1oMkyEee485SK6jFBfQ">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hXq6EckyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hXq6EskyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_hXAywMkyEee485SK6jFBfQ" name="PriceEnergyFunctionInitialiser" visibility="public">
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_hXBZ0MkyEee485SK6jFBfQ" name="demandFunction" visibility="private" type="_g0_q0skyEee485SK6jFBfQ" isUnique="false">
+                      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_hXCA4MkyEee485SK6jFBfQ" name="defaultValue">
+                        <language>JAVA</language>
+                        <body>new DemandEnergyFunction()</body>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_hXCA4ckyEee485SK6jFBfQ" name="supplyFunction" visibility="private" type="_g0_q0ckyEee485SK6jFBfQ" isUnique="false">
+                      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_hXCA4skyEee485SK6jFBfQ" name="defaultValue">
+                        <language>JAVA</language>
+                        <body>new SupplyPriceEnergyFunction()</body>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_hXFEMMkyEee485SK6jFBfQ" name="bids" visibility="private" isUnique="false"/>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_hXFEMckyEee485SK6jFBfQ" name="offers" visibility="private" isUnique="false"/>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXJ8sskyEee485SK6jFBfQ" name="PriceEnergyFunctionInitialiser" specification="_hXFrQMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    this.initPriceEnergyFunctions(requests);
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXLK0skyEee485SK6jFBfQ" name="initPriceEnergyFunctions" specification="_hXKjwMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    // separate bids and offers before ordering
+    this.demandFunction = new DemandEnergyFunction();
+    bids = new TreeSet&lt;>(new Comparator&lt;MarketEnergyRequest>() {
+
+        @Override
+        public int compare(MarketEnergyRequest r1, MarketEnergyRequest r2) {
+            // consider ID in case of equality:
+            return r2.getRequest().priceRequested == r1.getRequest().priceRequested ? r2.getId().compareTo(r1.getId()) : Float.compare(r2.getRequest().priceRequested, r1.getRequest().priceRequested);
+        }
+    });
+    this.supplyFunction = new SupplyPriceEnergyFunction();
+    offers = new TreeSet&lt;>(new Comparator&lt;MarketEnergyRequest>() {
+
+        @Override
+        public int compare(MarketEnergyRequest r1, MarketEnergyRequest r2) {
+            return r1.getRequest().priceRequested == r2.getRequest().priceRequested ? r1.getId().compareTo(r2.getId()) : Float.compare(r1.getRequest().priceRequested, r2.getRequest().priceRequested);
+        }
+    });
+    for (MarketEnergyRequest request : requests) {
+        if (request.getRequest().energyRequested > 0.0) {
+            bids.add(request);
+        } else {
+            request.getRequest().energyRequested = request.getRequest().energyRequested;
+            offers.add(request);
+        }
+    }
+    // construct functions
+    demandFunction.addRequests(new ArrayList&lt;MarketEnergyRequest>(bids));
+    supplyFunction.addRequests(new ArrayList&lt;MarketEnergyRequest>(offers));
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXMY8MkyEee485SK6jFBfQ" name="getDemandPriceEnergyFunction" specification="_hXLx4MkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return this.demandFunction;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXNAAckyEee485SK6jFBfQ" name="getOfferPriceEnergyFunction" specification="_hXMY8ckyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return this.supplyFunction;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXNnEckyEee485SK6jFBfQ" name="getAsks" specification="_hXNAAskyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return this.bids;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXOOIckyEee485SK6jFBfQ" name="getOffers" specification="_hXNnEskyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return this.offers;
+</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXFrQMkyEee485SK6jFBfQ" name="PriceEnergyFunctionInitialiser" visibility="public" method="_hXJ8sskyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXJVoMkyEee485SK6jFBfQ" name="requests" type="_ghb1oMkyEee485SK6jFBfQ">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hXJ8sMkyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hXJ8sckyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXKjwMkyEee485SK6jFBfQ" name="initPriceEnergyFunctions" visibility="private" method="_hXLK0skyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXKjwckyEee485SK6jFBfQ" name="requests" type="_ghb1oMkyEee485SK6jFBfQ">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hXLK0MkyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hXLK0ckyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXLx4MkyEee485SK6jFBfQ" name="getDemandPriceEnergyFunction" visibility="public" method="_hXMY8MkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXLx4ckyEee485SK6jFBfQ" type="_g0_q0skyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXMY8ckyEee485SK6jFBfQ" name="getOfferPriceEnergyFunction" visibility="public" method="_hXNAAckyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXNAAMkyEee485SK6jFBfQ" type="_g0_q0ckyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXNAAskyEee485SK6jFBfQ" name="getAsks" visibility="public" method="_hXNnEckyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXNnEMkyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXNnEskyEee485SK6jFBfQ" name="getOffers" visibility="public" method="_hXOOIckyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXOOIMkyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_hXPcQMkyEee485SK6jFBfQ" name="EnergyRequestValidator" visibility="public">
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXQqYMkyEee485SK6jFBfQ" name="validate" specification="_hXPcQckyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    // TODO
+    // check starttime
+    // check endtime
+    // reset energyAccepted
+    request.energyAccepted = Float.NaN;
+    // reset priceAccepted
+    request.priceCleared = Float.NaN;
+    return true;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXR4gMkyEee485SK6jFBfQ" name="setUnhandeled" specification="_hXQqYckyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    request.status = EnergyRequest.Status.UNHANDLED.getId();
+    return request;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXTtsckyEee485SK6jFBfQ" name="setInvalid" specification="_hXSfkMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    request.status = EnergyRequest.Status.INVALID.getId();
+    return request;
+</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXPcQckyEee485SK6jFBfQ" name="validate" visibility="public" isStatic="true" method="_hXQqYMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXQDUMkyEee485SK6jFBfQ" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXQDUckyEee485SK6jFBfQ" name="request"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXQqYckyEee485SK6jFBfQ" name="setUnhandeled" visibility="public" isStatic="true" method="_hXR4gMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXRRcMkyEee485SK6jFBfQ" direction="return"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXRRcckyEee485SK6jFBfQ" name="request"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXSfkMkyEee485SK6jFBfQ" name="setInvalid" visibility="public" isStatic="true" method="_hXTtsckyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXTGoMkyEee485SK6jFBfQ" direction="return"/>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXTtsMkyEee485SK6jFBfQ" name="request"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_hXWJ8MkyEee485SK6jFBfQ" name="PriceEnergyFunction" visibility="public" isAbstract="true">
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_hXWxAMkyEee485SK6jFBfQ" name="numRequests" visibility="protected" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_hXWxAckyEee485SK6jFBfQ" name="defaultValue">
+                        <language>JAVA</language>
+                        <body>0</body>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_hXXYEMkyEee485SK6jFBfQ" name="prices" visibility="protected" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_MtpDAPaLEeW5KOK8aDMdgA"/>
+                      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hXX_IMkyEee485SK6jFBfQ"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hXX_IckyEee485SK6jFBfQ" value="*"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_hXYmMMkyEee485SK6jFBfQ" name="energy" visibility="protected" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_MtpDAPaLEeW5KOK8aDMdgA"/>
+                      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hXZNQMkyEee485SK6jFBfQ"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hXZNQckyEee485SK6jFBfQ" value="*"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_hXZ0UMkyEee485SK6jFBfQ" name="currentPrice" visibility="protected" isUnique="false">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+                    </ownedAttribute>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXeFwMkyEee485SK6jFBfQ" name="PriceEnergyFunction" specification="_hXabYMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXhwIMkyEee485SK6jFBfQ" name="getEnergyIterator" specification="_hXfT4MkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return this.energy.iterator();
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXiXMMkyEee485SK6jFBfQ" name="getPriceByIndex" specification="_hXhwIckyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return this.prices.get(index);
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXjlUMkyEee485SK6jFBfQ" name="getEnergyByIndex" specification="_hXiXMckyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return this.energy.get(index);
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXkMYMkyEee485SK6jFBfQ" name="maxPriceIndex" specification="_hXjlUckyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return this.prices.size() - 1;
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXkzcskyEee485SK6jFBfQ" name="getPriceSeries" specification="_hXkMYckyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return ArrayUtils.toPrimitive((Float[]) this.prices.toArray(new Float[0]), Float.NaN);
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hXlag8kyEee485SK6jFBfQ" name="getEnergySeries" specification="_hXkzc8kyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return ArrayUtils.toPrimitive((Float[]) this.energy.toArray(new Float[0]), Float.NaN);
+</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXabYMkyEee485SK6jFBfQ" name="PriceEnergyFunction" visibility="public" method="_hXeFwMkyEee485SK6jFBfQ"/>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXeFwckyEee485SK6jFBfQ" name="addRequests" visibility="public" isAbstract="true">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXes0MkyEee485SK6jFBfQ" name="requests" type="_ghb1oMkyEee485SK6jFBfQ">
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hXes0ckyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hXes0skyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXfT4MkyEee485SK6jFBfQ" name="getEnergyIterator" visibility="public" method="_hXhwIMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXhJEckyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXhwIckyEee485SK6jFBfQ" name="getPriceByIndex" visibility="public" method="_hXiXMMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXhwIskyEee485SK6jFBfQ" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXhwI8kyEee485SK6jFBfQ" name="index">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXiXMckyEee485SK6jFBfQ" name="getEnergyByIndex" visibility="public" method="_hXjlUMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXi-QMkyEee485SK6jFBfQ" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXi-QckyEee485SK6jFBfQ" name="index">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXjlUckyEee485SK6jFBfQ" name="maxPriceIndex" visibility="public" method="_hXkMYMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXjlUskyEee485SK6jFBfQ" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXkMYckyEee485SK6jFBfQ" name="getPriceSeries" visibility="public" method="_hXkzcskyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXkMYskyEee485SK6jFBfQ" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hXkzcMkyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hXkzcckyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hXkzc8kyEee485SK6jFBfQ" name="getEnergySeries" visibility="public" method="_hXlag8kyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hXlagMkyEee485SK6jFBfQ" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+                        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hXlagckyEee485SK6jFBfQ"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hXlagskyEee485SK6jFBfQ" value="*"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_g1QJgMkyEee485SK6jFBfQ" name="doc">
+                  <packagedElement xmi:type="uml:Class" xmi:id="_g1QJgckyEee485SK6jFBfQ" name="CustomIgnore" visibility="public"/>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_g1SlwMkyEee485SK6jFBfQ" name="SwaggerConfig" visibility="public">
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g1ahkMkyEee485SK6jFBfQ" name="swaggerSpringMvcPlugin" specification="_g1SlwckyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return new Docket(DocumentationType.SWAGGER_2).apiInfo(//.groupName(&quot;enavi-market-api&quot;)
+    this.apiInfo()).select().apis(RequestHandlerSelectors.any()).paths(paths()).build();
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g1jrgMkyEee485SK6jFBfQ" name="paths" specification="_g1bvsMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return or(regex(&quot;/config.*&quot;), regex(&quot;/inspect.*&quot;), regex(&quot;/api/requests.*&quot;), regex(&quot;/api/submit.*&quot;), regex(&quot;/api/prices.*&quot;), regex(&quot;/api/test.*&quot;), regex(&quot;/api/test.*&quot;));
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_g1rnUMkyEee485SK6jFBfQ" name="apiInfo" specification="_g1k5oMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    @SuppressWarnings(&quot;rawtypes&quot;) ApiInfo apiInfo = new ApiInfo(&quot;ENavi Market REST API&quot;, &quot;Description of ENavi Market Server API.&quot;, &quot;API 0.1&quot;, &quot;Terms of service&quot;, new Contact(&quot;Sascha Holzhauer&quot;, &quot;http://ines.uni-kassel.de&quot;, &quot;sascha.holzhauer@uni-kassel.de&quot;), &quot;License of API&quot;, &quot;API license URL&quot;, new ArrayList&lt;VendorExtension>());
+    return apiInfo;
+</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g1SlwckyEee485SK6jFBfQ" name="swaggerSpringMvcPlugin" visibility="public" method="_g1ahkMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g1Z6gMkyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g1bvsMkyEee485SK6jFBfQ" name="paths" visibility="private" method="_g1jrgMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g1jEcMkyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_g1k5oMkyEee485SK6jFBfQ" name="apiInfo" visibility="private" method="_g1rnUMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g1qZMMkyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_g1wf0MkyEee485SK6jFBfQ" name="security">
+                  <packagedElement xmi:type="uml:Enumeration" xmi:id="_hW9vcMkyEee485SK6jFBfQ" name="Role" visibility="public">
+                    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_hW-9kMkyEee485SK6jFBfQ" name="ADMIN"/>
+                    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_hW-9kckyEee485SK6jFBfQ" name="USER"/>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_hR63YMkyEee485SK6jFBfQ" name="WebSecurityConfiguration">
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_hR_I0MkyEee485SK6jFBfQ" name="log" visibility="private" isUnique="false">
+                      <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_hR_I0ckyEee485SK6jFBfQ" name="defaultValue">
+                        <language>JAVA</language>
+                        <body>LogFactory.getLog(WebSecurityConfiguration.class)</body>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_hR_v4MkyEee485SK6jFBfQ" name="accountRepository" visibility="private" type="_g-SJsMkyEee485SK6jFBfQ" isUnique="false"/>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hSISwMkyEee485SK6jFBfQ" name="init" specification="_hSEoYMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    auth.userDetailsService(userDetailsService());
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hSMkMMkyEee485SK6jFBfQ" name="userDetailsService" specification="_hSISwckyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    return new UserDetailsService() {
+
+        /**
+			 * @see org.springframework.security.core.userdetails.UserDetailsService#loadUserByUsername(java.lang.String)
+			 */
+        @Override
+        public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+            UserAccount account = accountRepository.findByName(username);
+            log.debug(&quot;Request username &quot; + username + &quot; and receive &quot; + account);
+            if (account != null) {
+                log.info(&quot;Request user &quot; + username + &quot; with role &quot; + account.getRole().toString());
+                return new User(account.getName(), account.getPassword(), true, true, true, true, AuthorityUtils.createAuthorityList(account.getRole().toString()));
+            } else {
+                throw new UsernameNotFoundException(&quot;could not find the user '&quot; + username + &quot;'&quot;);
+            }
+        }
+    };
+</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hSEoYMkyEee485SK6jFBfQ" name="init" visibility="public" method="_hSISwMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hSEoYckyEee485SK6jFBfQ" name="auth"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hSISwckyEee485SK6jFBfQ" name="userDetailsService" visibility="private" method="_hSMkMMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hSL9IMkyEee485SK6jFBfQ" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_hSgGMMkyEee485SK6jFBfQ" name="WebSecurityConfig" visibility="public">
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hSrsYMkyEee485SK6jFBfQ" name="configure" specification="_hSqeQckyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    web.ignoring().antMatchers(&quot;/api/test/setup&quot;, &quot;/v2/api-docs&quot;, &quot;/configuration/ui&quot;, &quot;/swagger-resources/configuration/ui&quot;, &quot;/swagger-resources&quot;, &quot;/configuration/security&quot;, &quot;/swagger-ui.html&quot;, &quot;/webjars/**&quot;);
+</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_hSyaEMkyEee485SK6jFBfQ" name="configure" specification="_hSuvsMkyEee485SK6jFBfQ">
+                      <language>JAVA</language>
+                      <body>
+    http.cors().and().authorizeRequests().antMatchers(&quot;/api/submit&quot;).permitAll().antMatchers(//			.antMatchers(&quot;/api/requests/all&quot;).access(&quot;hasRole('ADMIN')&quot;)
+    &quot;/api/requests/**&quot;).permitAll().antMatchers(// .access(&quot;hasRole('ADMIN')&quot;)
+    &quot;/api/test/**&quot;).permitAll().antMatchers(&quot;/config-products/**&quot;).permitAll().antMatchers(&quot;/config-time/**&quot;).permitAll().antMatchers(&quot;/inspect/**&quot;).permitAll().antMatchers(&quot;/inspect/curveBySinceUntil&quot;).permitAll().anyRequest().fullyAuthenticated().and().httpBasic().and().csrf().disable();
+</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hSqeQckyEee485SK6jFBfQ" name="configure" visibility="public" method="_hSrsYMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hSrFUMkyEee485SK6jFBfQ" name="web"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:type="uml:Operation" xmi:id="_hSuvsMkyEee485SK6jFBfQ" name="configure" visibility="protected" method="_hSyaEMkyEee485SK6jFBfQ">
+                      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hSxL8MkyEee485SK6jFBfQ" name="http"/>
+                    </ownedOperation>
+                  </packagedElement>
+                </packagedElement>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_k8hN8Mk_Eee485SK6jFBfQ" name="ClearingClearing">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_273IYck_Eee485SK6jFBfQ" name="" type="_gg8GYMkyEee485SK6jFBfQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_40YwQMk_Eee485SK6jFBfQ" name="" type="_g1NGMMkyEee485SK6jFBfQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_S-klMclAEee485SK6jFBfQ" name=""/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_273IYMk_Eee485SK6jFBfQ" name="" represents="_273IYck_Eee485SK6jFBfQ" coveredBy="_0vtvAMlBEee485SK6jFBfQ _fcEAoMlAEee485SK6jFBfQ _fcBkYMlAEee485SK6jFBfQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_40YJMMk_Eee485SK6jFBfQ" name="" represents="_40YwQMk_Eee485SK6jFBfQ" coveredBy="_62qKAMk_Eee485SK6jFBfQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_S-klMMlAEee485SK6jFBfQ" name=":Runnable" represents="_S-klMclAEee485SK6jFBfQ" coveredBy="_0vtH8MlBEee485SK6jFBfQ _SZESIMlFEee485SK6jFBfQ _SZDrEMlFEee485SK6jFBfQ _62qKAck_Eee485SK6jFBfQ _SZE5MMlFEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_62qKAMk_Eee485SK6jFBfQ" name="Message1SendEvent" covered="_40YJMMk_Eee485SK6jFBfQ" message="_62o74Mk_Eee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0vtH8MlBEee485SK6jFBfQ" name="Message2SendEvent" covered="_S-klMMlAEee485SK6jFBfQ" message="_0vrSwMlBEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0vtvAMlBEee485SK6jFBfQ" name="Message2ReceiveEvent" covered="_273IYMk_Eee485SK6jFBfQ" message="_0vrSwMlBEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_SZESIMlFEee485SK6jFBfQ" name="ActionExecutionSpecification3Start" covered="_S-klMMlAEee485SK6jFBfQ" execution="_SZDrEMlFEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_62qKAck_Eee485SK6jFBfQ" name="Message1ReceiveEvent" covered="_S-klMMlAEee485SK6jFBfQ" message="_62o74Mk_Eee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_SZE5MMlFEee485SK6jFBfQ" name="ActionExecutionSpecification3Finish" covered="_S-klMMlAEee485SK6jFBfQ" execution="_SZDrEMlFEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_fcEAoMlAEee485SK6jFBfQ" name="ActionExecutionSpecification2Finish" covered="_273IYMk_Eee485SK6jFBfQ" execution="_fcBkYMlAEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_SZDrEMlFEee485SK6jFBfQ" name="ActionExecutionSpecification3" covered="_S-klMMlAEee485SK6jFBfQ" finish="_SZE5MMlFEee485SK6jFBfQ" start="_SZESIMlFEee485SK6jFBfQ"/>
+      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_fcBkYMlAEee485SK6jFBfQ" name="ActionExecutionSpecification2" covered="_273IYMk_Eee485SK6jFBfQ" finish="_fcEAoMlAEee485SK6jFBfQ" start="_0vtvAMlBEee485SK6jFBfQ"/>
+      <message xmi:type="uml:Message" xmi:id="_62o74Mk_Eee485SK6jFBfQ" name="run()" messageSort="asynchCall" receiveEvent="_62qKAck_Eee485SK6jFBfQ" sendEvent="_62qKAMk_Eee485SK6jFBfQ"/>
+      <message xmi:type="uml:Message" xmi:id="_0vrSwMlBEee485SK6jFBfQ" name="clearMarket" receiveEvent="_0vtvAMlBEee485SK6jFBfQ" sendEvent="_0vtH8MlBEee485SK6jFBfQ" signature="_g0NAoMkyEee485SK6jFBfQ"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gTguYMkyEee485SK6jFBfQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gTqfYMkyEee485SK6jFBfQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gU-uAMkyEee485SK6jFBfQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gVE0oMkyEee485SK6jFBfQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gV7wQMkyEee485SK6jFBfQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gWB24MkyEee485SK6jFBfQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <PapyrusJava:External xmi:id="_gkiM8MkyEee485SK6jFBfQ" name="Iterable" base_Classifier="_gkd7gMkyEee485SK6jFBfQ"/>
+  <standard:Create xmi:id="_g2AXcMkyEee485SK6jFBfQ" base_BehavioralFeature="_g15pwskyEee485SK6jFBfQ"/>
+  <standard:Create xmi:id="_g2JhYMkyEee485SK6jFBfQ" base_BehavioralFeature="_g2EB0MkyEee485SK6jFBfQ"/>
+  <PapyrusJava:External xmi:id="_g2bOMMkyEee485SK6jFBfQ" name="Iterable" base_Classifier="_g2Yx8MkyEee485SK6jFBfQ"/>
+  <standard:Create xmi:id="_g2opkMkyEee485SK6jFBfQ" base_BehavioralFeature="_g2k_MckyEee485SK6jFBfQ"/>
+  <standard:Create xmi:id="_g2wlYMkyEee485SK6jFBfQ" base_BehavioralFeature="_g2tiEMkyEee485SK6jFBfQ"/>
+  <standard:Create xmi:id="_g26WYMkyEee485SK6jFBfQ" base_BehavioralFeature="_g22E8MkyEee485SK6jFBfQ"/>
+  <standard:Create xmi:id="_g3dwAMkyEee485SK6jFBfQ" base_BehavioralFeature="_g3b60MkyEee485SK6jFBfQ"/>
+  <standard:Create xmi:id="_g3jPkMkyEee485SK6jFBfQ" base_BehavioralFeature="_g3gMQMkyEee485SK6jFBfQ"/>
+  <standard:Create xmi:id="_g3p9QMkyEee485SK6jFBfQ" base_BehavioralFeature="_g3nhAMkyEee485SK6jFBfQ"/>
+  <standard:Create xmi:id="_g3xSAMkyEee485SK6jFBfQ" base_BehavioralFeature="_g3tnoMkyEee485SK6jFBfQ"/>
+  <standard:Create xmi:id="_g4nmkMkyEee485SK6jFBfQ" base_BehavioralFeature="_g4j8MMkyEee485SK6jFBfQ"/>
+  <standard:Create xmi:id="_g4u7UMkyEee485SK6jFBfQ" base_BehavioralFeature="_g4sfEckyEee485SK6jFBfQ"/>
+  <standard:Create xmi:id="_hXIukMkyEee485SK6jFBfQ" base_BehavioralFeature="_hXFrQMkyEee485SK6jFBfQ"/>
+  <standard:Create xmi:id="_hXdesMkyEee485SK6jFBfQ" base_BehavioralFeature="_hXabYMkyEee485SK6jFBfQ"/>
+  <standard:Create xmi:id="_hXpE4MkyEee485SK6jFBfQ" base_BehavioralFeature="_hXnPsckyEee485SK6jFBfQ"/>
+  <standard:Create xmi:id="_hXvLgMkyEee485SK6jFBfQ" base_BehavioralFeature="_hXsvQckyEee485SK6jFBfQ"/>
+</xmi:XMI>

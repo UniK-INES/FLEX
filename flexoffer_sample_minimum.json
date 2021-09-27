@@ -1,0 +1,75 @@
+{
+	"timeStamp": "2020-10-28T20:11:03.543+01:00",
+	"senderDomain": "localhost.flex-server",
+	"recipientDomain": "localhost.hems",
+	"messageID": "5331c5b3-aa83-4008-8965-2303e3bbe973",
+	"ispDuration": "PT900S",
+	"timeZone": "Europe/Amsterdam",
+	"period": "2020-11-29",
+	"congestionPoint": {
+		"entityAddress": "CongestionPointID"
+	},
+	"expirationDateTime": "2030-10-28T20:11:03.543+01:00",
+	"currency": "EUR",
+	"contractID": "MP_ID:2#SampleContractID",
+	"offerOptions": [
+		{
+			"optionReference": "Option01",
+			"price": {
+				"amount": 15.3
+			},
+			"sanctionPrice": {
+				"amount": 10
+			},
+			"minActivationFactor": {
+				"value": 0.5
+			},
+			"isps": [
+				{
+					"power": 500,
+					"start": 1,
+					"duration": 1
+				},
+				{
+					"power": 1500,
+					"start": 2,
+					"duration": 1
+				},
+				{
+					"power": 0,
+					"start": 3,
+					"duration": 1
+				}
+			]
+		},
+		{
+			"optionReference": "Option02",
+			"price": {
+				"amount": 20.2
+			},
+			"sanctionPrice": {
+				"amount": 8
+			},
+			"minActivationFactor": {
+				"value": 0.5
+			},
+			"isps": [
+				{
+					"power": 0,
+					"start": 1,
+					"duration": 1
+				},
+				{
+					"power": 1500,
+					"start": 2,
+					"duration": 1
+				},
+				{
+					"power": 800,
+					"start": 3,
+					"duration": 1
+				}
+			]
+		}
+	]
+}

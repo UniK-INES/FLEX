@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<!-- include resource="org/springframework/boot/logging/logback/base.xml" 
+		/ -->
+
+	<property resource="${LOGBACK_CONFIGURATION_FILE:-logback_t460.properties}" />
+	
+	<timestamp key="timeStamp" datePattern="yyyy-MM-dd_HH-mm"/>
+	
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{mm:ss.SSS} %-38logger{36} %-5level: - %msg%n</pattern>
+		</encoder>
+		
+		<!-- filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      		<level>WARN</level>
+    	</filter-->
+	</appender>
+  
+  	<appender name="EVENTLOGGER_FILE"
+		class="ch.qos.logback.core.FileAppender">
+		<file>${LOG_PATH}/FLEX_Eventlog_${timeStamp}.log</file>
+
+		<encoder>
+			<pattern>
+				%d{mm:ss.SSS} %-38logger{36} %-5level: - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	
+	<appender name="ROLL_FILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_PATH}/FLEX_log.log</file>
+
+		<encoder>
+			<pattern>
+				<!--%d{dd-MM-yyyy HH:mm:ss.SSS} %-5level %-10thread %logger{30}.%-20M %n\t%msg%n%n-->
+				%green(%d{yyyy-MM-dd HH:mm:ss.SSS, Europe/Berlin}) %highlight(%-5level) %magenta([%-15.15t]) %cyan(%-40.40logger{39}): %n\t%msg%n%n
+			</pattern>
+		</encoder>
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>
+				${LOG_PATH}/FLEX_log_%d{yyyy-MM-dd, Europe/Berlin}_%i.log
+			</fileNamePattern>
+			<maxHistory>100</maxHistory>
+			<totalSizeCap>1000MB</totalSizeCap>
+			<TimeBasedFileNamingAndTriggeringPolicy class="de.unik.ines.soeasy.flex.util.StartupTimeBasedTriggeringPolicy">
+				<maxFileSize>5MB</maxFileSize>
+			</TimeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+	</appender>
+
+	<springProfile name="requests, demo, opsim, nossl, testing, localhostdocker, gygessimdocker">
+		<root level="WARN">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</root>
+		
+		<logger name="*" additivity="false" level="WARN">
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+					
+		<logger name="de.unik.ines.soeasy.flex" additivity="false" level="INFO">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+
+		<logger name="de.unik.ines.soeasy.flex.FlexMarketInfoController" additivity="false" level="info">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+		
+		<logger name="de.unik.ines.soeasy.flex.FlexMarketFoController" additivity="false" level="info">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+		
+		<logger name="de.unik.ines.soeasy.flex.security" additivity="false" level="INFO">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+		
+		<logger name="energy.usef.core.config" additivity="false" level="WARN">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+		
+		<logger name="de.unik.ines.soeasy.flex.scheduling.TimeInitializingBean" additivity="false" level="INFO">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+		
+		<logger name="de.unik.ines.soeasy.flex.scheduling" additivity="false" level="TRACE">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+		
+		<logger name="de.unik.ines.soeasy.flex.clearing" additivity="false" level="DEBUG">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+		
+		<!--logger name="de.unik.ines.soeasy.flex.util.EnergyRequestValidator" additivity="false" level="trace">
+			<appender-ref ref="ROLL_FILE" />
+		</logger-->
+		
+		<logger name="de.unik.ines.soeasy.flex.local.LocalFlexDemandManager" additivity="false" level="info">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+		
+		<logger name="de.unik.ines.soeasy.flex.grid.GridFlexDemandManager" additivity="false" level="info">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+		
+		<logger name="de.unik.ines.soeasy.flex.model.MarketEnergyRequest" additivity="false" level="info">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+		
+		<logger name="de.unik.ines.soeasy.flex.FlexMarketCimController" additivity="false" level="info">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+
+		<logger name="de.unik.ines.soeasy.flex.util.ScheduleMarketDocumentFactory" additivity="false" level="debug">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+		
+		<logger name="de.unik.ines.soeasy.flex.grid.Schedule4GridSimManager" additivity="false" level="info">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+		
+		<logger name="de.unik.ines.soeasy.flex.clearing.EThreadPoolTaskScheduler" additivity="false" level="info">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+		
+		<logger name="org.hibernate" additivity="false" level="info">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+
+		<logger name="javax.persistence" additivity="false" level="info">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+				
+		<logger name="org.springframework.web" additivity="false" level="warn">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+		
+		<!--logger name="org.springframework.web.filter.CommonsRequestLoggingFilter"  additivity="false" >
+		    <level value="info" />
+		    <appender-ref ref="CONSOLE" />
+		</logger-->
+
+		
+		<logger name="de.unik.ines.soeasy.flex.grid"  additivity="false" >
+		    <level value="debug" />
+		    <appender-ref ref="CONSOLE" />
+		</logger>
+		
+		<logger name="de.unik.ines.soeasy.flex.flex"  additivity="false" >
+			<appender-ref ref="CONSOLE" />
+		    <level value="debug" />
+		</logger>
+		
+		<!--logger name="de.unik.ines.soeasy.flex.util.LoggingRequestInterceptor"  additivity="false" >
+			<appender-ref ref="CONSOLE" />
+		    <level value="info" />
+		</logger-->
+
+		<logger name="de.unik.ines.soeasy.flex.util.LoggingRequestInterceptor"  additivity="false" >
+			<appender-ref ref="ROLL_FILE" />
+		    <level value="trace" />
+		</logger>
+		
+		<logger name="org.springframework.web.servlet.mvc.method.annotation"  additivity="false" >
+			<appender-ref ref="CONSOLE" />
+		    <level value="WARN" />
+		</logger>
+
+		<!-- logger name="org.hibernate.type.descriptor.sql.BasicBinder" additivity="false" level="trace">
+			<appender-ref ref="ROLL_FILE" />
+		</logger-->
+				
+		<logger name="de.unik.ines.soeasy.flex.clearing.MarketProductClearer" additivity="false" level="info">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+		
+		<logger name="de.codecentric.boot.admin.client.registration"  additivity="false" >
+			<appender-ref ref="CONSOLE" />
+		    <level value="INFO" />
+		</logger>
+		
+		<logger name="de.unik.ines.soeasy.flex.util.FlexPropertyLogger"  additivity="false" >
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		    <level value="WARN" />
+		</logger>
+		
+		<logger name="de.unik.ines.soeasy.flex.eventlogger" additivity="false" level="INFO">
+			<appender-ref ref="EVENTLOGGER_FILE" />
+		</logger>
+		
+	</springProfile>
+
+	<springProfile name="clusterunik, gyges, gygesdocker">
+		<root level="WARN">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</root>
+		
+		<logger name="*" additivity="false" level="WARN">
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+					
+		<logger name="de.unik.ines.soeasy.flex" additivity="false" level="INFO">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+		
+		<logger name="de.unik.ines.soeasy.flex.FlexMarketCimController" additivity="false" level="info">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+			
+		<logger name="de.unik.ines.soeasy.flex.clearing.MarketProductClearer" additivity="false" level="info">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+			
+		<logger name="de.unik.ines.soeasy.flex.clearing.EThreadPoolTaskScheduler" additivity="false" level="info">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+			
+		<logger name="org.springframework.web" additivity="false" level="info">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		</logger>
+		
+		<logger name="de.unik.ines.soeasy.flex.util.FlexPropertyLogger"  additivity="false" >
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="ROLL_FILE" />
+		    <level value="WARN" />
+		</logger>
+	</springProfile>
+	
+	<springProfile name="priceadapt">
+		<root level="info">
+			<appender-ref ref="CONSOLE" />
+		</root>
+		
+		<logger name="de.unik.ines.soeasy.flex.balance"  additivity="false" >
+			<appender-ref ref="CONSOLE" />
+		    <level value="trace" />
+		</logger>
+	</springProfile>
+
+	<springProfile name="default">
+		<root level="info">
+			<appender-ref ref="CONSOLE" />
+		</root>
+	</springProfile>
+</configuration>
